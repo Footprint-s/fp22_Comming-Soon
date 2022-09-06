@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Reset CSS  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    --background-color: #38B4AB;
+    --font-color:#FFFFFF; 
+    --Hover-color:#38B4AB;
+    --NormalMargin:10px;
+    --NormalPadding:5px;
+}
+
+
+/* Stlyling In Body */
+body{
+    /* background-color: var(--background-color); */
+    background-color: black;
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- Styling in Footer Section -------------- */
+
+#Fp_footer{
+
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+}
+
+/* -------   Styling in Footer(Contact) --------- */
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*  ---------- Styling in Newslwtter ---------- */
+
+#footer_div_newsLetter{
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: inherit;
+}
+
+#newsletter_info{
+    margin: 19px 0px;
+    width: 87%;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#footer_form{
+    margin: 0px;
+    border: 1px solid red;
+    width: 89%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: aquamarine;
+}
+
+#footer-input{
+        width: 150%;
+        height: 42px;
+        padding: 0px 10px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        letter-spacing: 2px;
+    background-color: aquamarine;
+}
+
+#footer_btn{
+    margin: 1px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 35px;
+    box-sizing: border-box;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    color: white;
+    background: #7cbba6b3;
+    font-weight: bolder;
+    border-color: white;
+    border: 1px solid white;
+
+}
+
+/*  ---------- Styling in ImagePart ---------- */
+
+#footer_div_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_social_media{
+    border: 1px solid green;
+    width: 50%;
+}
+
+.media_icons{
+    border: 1px solid white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*  ---------- Styling in Contact ---------- */
+
+#footer_div_contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* ---------- Styling in CopyRight ---------- */
+
+.footer_div_CopyRight{
+    text-align: center;
+
+}
+
+
+/* -------  Utility classes --------  */
+
+/* Styling in Item */
+.footer_Item{
+    border: 1px solid white;
+    padding: 25px;
+    flex: 1 1 0;
+}
+
+.footer_header{
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.footer_hr
+{
+    margin-top: 5px;
+    width: 66%;
+
+}
+
+.fa{
+    color: white;
+    font-size: 20px;
+}
+
+.footer_InDetail{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
