@@ -16,103 +16,126 @@
 
     <!-- footer : Contact and NewsLetter (Abdeali)  -->
 
-    <footer id="footer" class="">
-        <!-- NewsLetter -->
-        <div class="footer_Item" id="footer_div_newsLetter">
+    <section class="container-fluid">
 
-            <h3 class="footer_header">NEWS LETTER SIGN-UP</h3>
-
-            <!-- <hr class="footer_hr"> -->
-
-            <p id="newsletter_info">By subscribing to our mailing list you will always be updated with the latest
-                news from us.</p>
-            <div>
-                <form id="footer_form">
+        <footer id="footer" class="container-fluid row">
+            
+            <!-- NewsLetter : column 1 -->
+            <div class="footer_Item col-8 col-md-4" id="footer_div_newsLetter">
+    
+                <h3 class="footer_header">NEWS LETTER SIGN-UP</h3>
+    
+                <!-- <hr class="footer_hr"> -->
+    
+                <p id="newsletter_info">By subscribing to our mailing list you will always be updated with the latest
+                    news from us.</p>
+                <div>
+                    <form id="footer_form">
+                        <div id="div_mail">
+                            <input type="email" placeholder="Enter Email Address" name="email" id="email-textbox">
+                        </div>
+    
+                        <div>
+                            <button type="submit" id="send" class="footer_btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+    
+            <!-- Msu Logo and Social Media Icon : column 2 -->
+            <div class="footer_Item col-6 col-md-4" id="footer_div_image">
+    
+                <div class="footer_msu_logo">
+    
+                    <a href="https://www.msubaroda.ac.in/" target="_blank">
+    
+                        <img width="300px" src="./Images/msulogo_lsqzua.png" alt="Faculty of Technology & Engineering">
+                    </a>
+    
+                </div>
+    
+                <div class="footer_social_media">
+    
+                    <ul class="media_icons">
+                        <li><a href="#" target="_blank"><i class="fa fa-instagram social"></i></a></li>
+    
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook social"></i></a></li>
+    
+                        <li><a href="#" target="_blank"><i class="fa fa-youtube-play social"></i></a></li>
+    
+                        <li><a href="#" target="_blank"><i class="fa fa-linkedin social"></i></a></li>
+    
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter social"></i></a></li>
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+            <!-- Contact , WebTeam : column 3 -->
+            <div class="footer_Item col-8 col-md-4" id="footer_div_contact">
+    
+                <h3 class="footer_header">Contact info</h3>
+    
+                <!-- <hr class="footer_hr"> -->
+    
+                <div class="footer_InDetail">
+    
+                    <i class='fa fa-map con_icon'></i>
+    
                     <div>
-                        <input type="email" placeholder="Enter Email Address" name="email" id="email-textbox">
+                        <p>Training and Placement Cell, Faculty of Technology and Engineering, Kalabhavan, Vadodara</p>
                     </div>
-
+                </div>
+    
+                <div class="footer_InDetail">
+                    <i class="fa fa-envelope con_icon"></i>
                     <div>
-                        <button type="submit" id="send" class="footer_btn">Sign-Up</button>
+                        <!-- <p>info@msufp.in</p> -->
+                        <!-- <p>contact@msufp.in</p> -->
+    
+                      <p>  <a href="mailto:info@msufp.in">info@msufp.in</a></p>
+                       <p> <a href="mailto:contact@msufp.in">contact@msufp.in</a></p>
+    
                     </div>
-                </form>
-            </div>
-
-        </div>
-
-        <!-- Msu Logo and Social Media Icon -->
-        <div class="footer_Item" id="footer_div_image">
-
-            <div class="footer_msu_logo">
-
-                <a href="https://www.msubaroda.ac.in/" target="_blank">
-
-                    <img width="300px" src="./Images/msulogo_lsqzua.png" alt="Faculty of Technology & Engineering">
-                </a>
-
-            </div>
-
-            <div class="footer_social_media">
-
-                <ul class="media_icons">
-                    <li><a href="#" target="_blank"><i class="fa fa-instagram social"></i></a></li>
-
-                    <li><a href="#" target="_blank"><i class="fa fa-facebook social"></i></a></li>
-
-                    <li><a href="#" target="_blank"><i class="fa fa-youtube-play social"></i></a></li>
-
-                    <li><a href="#" target="_blank"><i class="fa fa-linkedin social"></i></a></li>
-
-                    <li><a href="#" target="_blank"><i class="fa fa-twitter social"></i></a></li>
-                </ul>
-
-            </div>
-
-        </div>
-
-        <!-- Contact , WebTeam -->
-        <div class="footer_Item" id="footer_div_contact">
-
-            <h3 class="footer_header">Contact info</h3>
-
-            <!-- <hr class="footer_hr"> -->
-
-            <div class="footer_InDetail">
-
-                <i class='fa fa-map con_icon'></i>
-
-                <div>
-                    <p>Training and Placement Cell, Faculty of Technology and Engineering, Kalabhavan, Vadodara</p>
                 </div>
-            </div>
-
-            <div class="footer_InDetail">
-                <i class="fa fa-envelope con_icon"></i>
-                <div>
-                    <p>info@msufp.in</p>
-                    <p>contact@msufp.in</p>
+    
+    
+                <div class="footer_InDetail Phone_div">
+                 
+                    <div>
+                        <i class="fa fa-phone con_icon"></i>
+                    </div>
+                    
+                    <div>
+                        <!-- <p>+91-973-795-8134</p>
+                        <p>+91-814-0725-877</p> -->
+    
+                       <p> <a href="tel:9737958134">+91-9737958134</a></p>
+                       <p> <a href="tel:8140725877">+91-8140725877</a></p>
+    
+    
+                    </div>
+    
+                    <div id="div_teambtn">
+                        <a href="#" target="_blank"><button class="footer_btn" id="webTeamBtn">Web team</button></a>
+                    </div>
+    
                 </div>
+    
             </div>
-
-
-            <div class="footer_InDetail Phone_div">
-                <i class="fa fa-phone con_icon"></i>
-                <div>
-                    <p>+91-973-795-8134</p>
-                    <p>+91-814-0725-877</p>
-                </div>
-                <a href="#" target="_blank"><button class="footer_btn" id="webTeamBtn">web team</button></a>
-            </div>
-
+    
+        </footer>
+    
+        <div class="footer_div_CopyRight">
+            <p>Copyright <span>&#169;</span> 2022 FootPrints. All Rights Reserved </p>
         </div>
+    
+    
+    </section>
 
-    </footer>
-
-    <div class="footer_div_CopyRight">
-        <p>Copyright <span>&#169;</span> 2022 FootPrints. All Rights Reserved </p>
-    </div>
-
-
+   
 </body>
 <script src="script.js"></script>
 
