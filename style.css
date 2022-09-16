@@ -1,36 +1,36 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
 /* Reset CSS  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    
+:root {
+
     --background-color: #17262b;
-    --font-color:#FFFFFF; 
-    --icon-color:#46aeaa;
-    --NormalMargin:10rem;
-    --NormalPadding:5px;
-     font-size: 16px;
+    --font-color: #FFFFFF;
+    --icon-color: #46aeaa;
+    --NormalMargin: 10rem;
+    --NormalPadding: 5px;
+    font-size: 16px;
 }
 
 
 /* Stlyling In Body */
-body{
+body {
     /* background-color: var(--background-color); */
     color: var(--font-color);
-    font-family: 'Outfit', sans-serif;}
+    font-family: 'Outfit', sans-serif;
+}
 
 /* ---------- Styling in Footer Section -------------- */
 
 
 /* -------   Styling in Footer(Contact) --------- */
 
-#footer{
+#footer {
     background-color: var(--background-color);
 }
 
@@ -38,21 +38,21 @@ body{
 
 /*  ---------- Styling in Newslwtter ---------- */
 
-#footer_div_newsLetter{
+#footer_div_newsLetter {
     display: flex;
     flex-direction: column;
     align-items: inherit;
-    gap: 1.56rem;
+    gap: 2.5rem;
 }
 
-#newsletter_info{
+#newsletter_info {
     margin: 1.19rem 0rem;
     width: 100%;
     font-size: 1.12rem;
     letter-spacing: 1px;
 }
 
-#footer_form{
+#footer_form {
     margin: 0rem;
     display: flex;
     justify-content: space-between;
@@ -63,30 +63,31 @@ body{
     flex-wrap: wrap;
 }
 
-#email-textbox{
-        width: 100%;
-        height: 2.62rem;
-        padding: 0rem 0.625rem;
-        border: none;
-        outline: none;
-        font-size: 1.125rem;
-        letter-spacing: 2px;
-        color: #FFFFFF;
-        background-color:  #1b3438;
+#email-textbox {
+    width: 100%;
+    height: 2.62rem;
+    padding: 0rem 0.625rem;
+    border: none;
+    outline: none;
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    background-color: #1b3438;
 }
 
-#div_mail{
+#div_mail {
     flex-grow: 2;
 }
 
 
-::placeholder { 
+::placeholder {
     color: white;
     font-weight: 100;
-    opacity: 1; /* Firefox */
-  }
+    opacity: 1;
+    /* Firefox */
+}
 
-.footer_btn{
+.footer_btn {
     margin: 0.06rem 0.5rem;
     display: flex;
     justify-content: center;
@@ -98,80 +99,91 @@ body{
     letter-spacing: 1px;
     border-radius: 5px;
     color: white;
-    background-color:  #1b3438;
+    background-color: #1b3438;
     border: 0.5px solid white;
     cursor: pointer;
 
 }
 
-.footer_btn:hover{
+.footer_btn:hover {
     background-color: #114457;
 }
 
 /*  ---------- Styling in ImagePart ---------- */
 
-#footer_div_image{
+#footer_div_image {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.footer_social_media{
-    width: 50%;
+.footer_msu_logo{
+    margin-bottom: 1rem;
+}
+
+#img_msulogo {
+    width: 22rem;
+    /* width: 300px; */
+}
+
+.footer_social_media {
+    /* width: 50%; */
+    width: 88%;
     margin-top: 0.75rem;
 }
 
 
-.media_icons{
+.media_icons {
     list-style: none;
     display: flex;
     justify-content: space-around;
     gap: 0.625rem;
+    padding: 0px;
 }
 
-.social{
-    font-size: 1.62rem; 
+.social {
+    font-size: 1.62rem;
 }
 
-.social:hover{
-    color: var(--icon-color); 
+.social:hover {
+    color: var(--icon-color);
 }
 
 /*  ---------- Styling in Contact ---------- */
 
-#footer_div_contact{
+#footer_div_contact {
     display: flex;
     flex-direction: column;
     align-items: baseline;
 }
 
-.Phone_div{
+.Phone_div {
     flex-wrap: wrap;
 }
 
-#webTeamBtn{
+#webTeamBtn {
     width: 8.12rem;
 }
 
-#div_teambtn{
+#div_teambtn {
     flex-grow: 2;
     justify-content: end;
     display: flex;
 }
+
 /* ---------- Styling in CopyRight ---------- */
 
-.footer_div_CopyRight{
+.footer_div_CopyRight {
     text-align: center;
     background: #1f3c46;
-    height: 2rem;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1px;
 }
 
-.footer_div_CopyRight p{
+.footer_div_CopyRight p {
     margin-top: 0;
     margin-bottom: 0rem;
 }
@@ -181,29 +193,29 @@ body{
 /* -------  Utility classes --------  */
 
 /* Styling in Item */
-.footer_Item{
+.footer_Item {
+    /* border: 1px solid white; */
     padding: 1.56rem;
 }
 
-.footer_header{
+.footer_header {
     font-size: 2.25rem;
     letter-spacing: 3px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--icon-color);
 }
 
-.footer_hr
-{
-    border: 1px solid var(--icon-color) ;
+.footer_hr {
+    border: 1px solid var(--icon-color);
     margin-top: 5px;
     width: 80%;
 }
 
-.fa{
+.fa {
     color: #FFFFFF;
 }
 
-.footer_InDetail{
+.footer_InDetail {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -211,27 +223,83 @@ body{
     margin-top: 1.56rem;
 }
 
-.con_icon{
+.con_icon {
     color: var(--icon-color);
-     font-size: 2rem;
+    font-size: 2rem;
 }
 
 /* ------------- Bootstrap classes -------------------  */
 
-#footer p{
+#footer p {
     margin-top: 0;
     margin-bottom: 0rem;
 }
 
-#footer a{
-        color: #FFFFFF;
+#footer a {
+    color: #FFFFFF;
     text-decoration: none;
 }
 
-.container-fluid{
+.container-fluid {
     width: 100%;
     padding-right: 0;
-    padding-left:0;
+    padding-left: 0;
     margin-right: auto;
     margin-left: auto;
+}
+
+/* ----------------------- Media Queries -------------------------  */
+
+@media screen and (max-width:360px) {
+    /* --- NewsLetter ---- */
+
+    #head_NL {
+        /* border: 1px solid red; */
+        font-size: 1.7rem;
+        letter-spacing: 0px;
+    }
+
+    #footer_form {
+        flex-wrap: nowrap;
+    }
+
+    #email-textbox {
+        border: 1px solid red;
+        width: 100%;
+        height: 2.62rem;
+        padding: 0rem 0.3rem;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        /* letter-spacing: 2px; */
+        color: #FFFFFF;
+        background-color: #1b3438;
+    }
+
+    #img_msulogo {
+        width: 15rem;
+    }
+
+    .media_icons {
+      gap: 0px;
+    }
+
+    .footer_Item {
+        padding: 1rem;
+    }
+
+    .footer_social_media {
+        width: 88%;
+    }
+
+    .footer_div_CopyRight {
+        height: auto;
+        font-size: 0.9rem;
+    }
+
+
+
+
+    #head_CI {}
+
 }
