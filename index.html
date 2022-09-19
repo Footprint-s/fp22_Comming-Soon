@@ -26,34 +26,47 @@
         <footer id="footer" class="row container-fluid">
 
             <!-- NewsLetter : column 1 -->
-            <div class="footer_Item  col-md-4" id="footer_div_newsLetter">
+            <div class="footer_Item col-sm-6 col-lg-4" id="footer_div_newsLetter">
 
-                <h3 class="footer_header" id="head_NL">NEWS LETTER SIGN-UP</h3>
+                <div class="div_NL">
+                    <h3 class="footer_header" id="head_NL">NEWS LETTER SIGN-UP</h3>
+                    <p id="newsletter_info">By subscribing to our mailing list you will always be updated with the latest news from us.</p>
+                   
+                    <div>
+                        <form id="footer_form">
 
-                <!-- <hr class="footer_hr"> -->
+                            <div id="div_mail">
+                                <input type="email" placeholder="Enter Email Address" name="email" id="email-textbox">
+                            </div>
 
-                <p id="newsletter_info">By subscribing to our mailing list you will always be updated with the latest news from us.</p>
-                <div>
-                    <form id="footer_form">
-                        <div id="div_mail">
-                            <input type="email" placeholder="Enter Email Address" name="email" id="email-textbox">
-                        </div>
+                            <div>
+                                <button type="submit" id="send" class="footer_btn">Subscribe</button>
+                            </div>
 
-                        <div>
-                            <button type="submit" id="send" class="footer_btn">Subscribe</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- CA form part -->
+
+                <div class="div_CA">
+
+                    <h3 class="footer_header" id="head_CA">Wanna be Campus Ambassador of your College?</h3>
+                    <button type="button" id="btn_join" class="footer_btn">Join Us</button>
+
                 </div>
 
             </div>
 
             <!-- Msu Logo and Social Media Icon : column 2 -->
-            <div class="footer_Item col-md-4" id="footer_div_image">
+            <div class="footer_Item col-sm-6 col-lg-4" id="footer_div_image">
 
                 <div class="footer_msu_logo">
 
                     <a href="https://www.msubaroda.ac.in/" target="_blank">
-
                         <img id="img_msulogo" src="./Images/msulogo_lsqzua.png" alt="Faculty of Technology & Engineering">
                     </a>
 
@@ -62,15 +75,15 @@
                 <div class="footer_social_media">
 
                     <ul class="media_icons">
-                        <li><a href="#" target="_blank"><i class="fa fa-instagram social"></i></a></li>
+                        <li><a href="https://www.instagram.com/footprints.msu/" target="_blank"><i class="fa fa-instagram social"></i></a></li>
 
-                        <li><a href="#" target="_blank"><i class="fa fa-facebook social"></i></a></li>
+                        <li><a href="https://www.facebook.com/msufp/" target="_blank"><i class="fa fa-facebook social"></i></a></li>
 
-                        <li><a href="#" target="_blank"><i class="fa fa-youtube-play social"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/FootPrintsMSU/featured" target="_blank"><i class="fa fa-youtube-play social"></i></a></li>
 
-                        <li><a href="#" target="_blank"><i class="fa fa-linkedin social"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/msufp/" target="_blank"><i class="fa fa-linkedin social"></i></a></li>
 
-                        <li><a href="#" target="_blank"><i class="fa fa-twitter social"></i></a></li>
+                        <li><a href="https://twitter.com/msu_footprints" target="_blank"><i class="fa fa-twitter social"></i></a></li>
                     </ul>
 
                 </div>
@@ -78,30 +91,30 @@
             </div>
 
             <!-- Contact , WebTeam : column 3 -->
-            <div class="footer_Item col-md-4" id="footer_div_contact">
+            <div class="footer_Item  col-sm-12 col-lg-4" id="footer_div_contact">
 
-                <h3 class="footer_header" id="head_CI">Contact info</h3>
-
-                <!-- <hr class="footer_hr"> -->
+                <h3 class="footer_header" id="head_CI">CONTACT INFO</h3>
 
                 <div class="footer_InDetail">
 
                     <i class='fa fa-map con_icon'></i>
 
                     <div>
-                        <p>Training and Placement Cell, Faculty of Technology and Engineering, Kalabhavan, Vadodara</p>
+                        <a class="footer_P_hover"  target="_blank" href="https://www.google.com/search?tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALiCzsb44XmcOIu4BptFbb_E7xWahVsVGg:1663531057976&q=Training+and+Placement+Cell,+Faculty+of+Technology+and+Engineering,+Kalabhavan,+Vadodara.&rflfq=1&num=10&ved=2ahUKEwiR_aGOkJ_6AhXj8DgGHRJ4CfQQtgN6BAgVEAE#rlfi=hd:;si:2342506311024018623,l,CllUcmFpbmluZyBhbmQgUGxhY2VtZW50IENlbGwsIEZhY3VsdHkgb2YgVGVjaG5vbG9neSBhbmQgRW5naW5lZXJpbmcsIEthbGFiaGF2YW4sIFZhZG9kYXJhLhnjdbZd4u389Eik3P0GWn0QABABEAIQAxAEEAUQBhAHEAgYARgEGAUYBhgHGAgYCRgKIlV0cmFpbmluZyBhbmQgcGxhY2VtZW50IGNlbGwgZmFjdWx0eSBvZiB0ZWNobm9sb2d5IGFuZCBlbmdpbmVlcmluZyBrYWxhYmhhdmFuIHZhZG9kYXJhKgIIApIBCnVuaXZlcnNpdHmaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJlUzFsWlVGbkVBRaoBdQoJL20vMDE0amczEAEaHxABIhuy4RsskYRtxdrMw2hJi9sX7xfPudH9EdyGhhUqRSJBdHJhaW5pbmcgYW5kIHBsYWNlbWVudCBjZWxsIGZhY3VsdHkgb2YgdGVjaG5vbG9neSBhbmQgZW5naW5lZXJpbmcoAA;mv:[[22.3910834,73.2008159],[22.290794899999998,73.1418285]]">Training and Placement Cell, Faculty of Technology and Engineering, Kalabhavan, Vadodara.</a>
                     </div>
+
                 </div>
 
                 <div class="footer_InDetail">
+                   
                     <i class="fa fa-envelope con_icon"></i>
-
+                   
                     <div>
-                        <p> <a href="mailto:info@msufp.in">info@msufp.in</a></p>
-                        <p> <a href="mailto:contact@msufp.in">contact@msufp.in</a></p>
+                        <p> <a class="footer_P_hover" href="mailto:info@msufp.in">info@msufp.in</a></p>
+                        <p > <a class="footer_P_hover" href="mailto:contact@msufp.in">contact@msufp.in</a></p>
                     </div>
-                </div>
 
+                </div>
 
                 <div class="footer_InDetail Phone_div">
 
@@ -110,12 +123,12 @@
                     </div>
 
                     <div>
-                        <p> <a href="tel:9737958134">+91-9737958134</a></p>
-                        <p> <a href="tel:8140725877">+91-8140725877</a></p>
+                        <p> <a class="footer_P_hover" href="tel:9737958134">+91-9737958134</a></p>
+                        <p> <a class="footer_P_hover" href="tel:8140725877">+91-8140725877</a></p>
                     </div>
 
                     <div id="div_teambtn">
-                        <a href="#" target="_blank"><button class="footer_btn" id="webTeamBtn">Web team</button></a>
+                        <a href="#" target="_blank"><button class="footer_btn" id="webTeamBtn">Web Team</button></a>
                     </div>
 
                 </div>
@@ -125,7 +138,7 @@
         </footer>
 
         <div class="footer_div_CopyRight row container-fluid">
-            <p>Copyright <span>&#169;</span> 2022 FootPrints. All Rights Reserved </p>
+            <p>Copyright <span>&#169;</span> 2022 FootPrints'23. All Rights Reserved </p>
         </div>
 
 

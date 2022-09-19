@@ -12,21 +12,16 @@
     --background-color: #17262b;
     --font-color: #FFFFFF;
     --icon-color: #46aeaa;
-    --NormalMargin: 10rem;
+    --NormalMargin: 5px;
     --NormalPadding: 5px;
     font-size: 16px;
 }
 
-
 /* Stlyling In Body */
 body {
-    /* background-color: var(--background-color); */
     color: var(--font-color);
     font-family: 'Outfit', sans-serif;
 }
-
-/* ---------- Styling in Footer Section -------------- */
-
 
 /* -------   Styling in Footer(Contact) --------- */
 
@@ -34,15 +29,20 @@ body {
     background-color: var(--background-color);
 }
 
-
-
 /*  ---------- Styling in Newslwtter ---------- */
 
 #footer_div_newsLetter {
     display: flex;
     flex-direction: column;
     align-items: inherit;
-    gap: 2.5rem;
+    gap: 1rem;
+    padding: 1.56rem 0px 1.56rem 1.56rem;
+}
+
+.div_NL {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #newsletter_info {
@@ -84,7 +84,6 @@ body {
     color: white;
     font-weight: 100;
     opacity: 1;
-    /* Firefox */
 }
 
 .footer_btn {
@@ -93,7 +92,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 6.06rem;
-    height: 2.19rem;
+    height: 2.3rem;
     box-sizing: border-box;
     font-size: 1rem;
     letter-spacing: 1px;
@@ -102,11 +101,28 @@ body {
     background-color: #1b3438;
     border: 0.5px solid white;
     cursor: pointer;
-
 }
 
 .footer_btn:hover {
     background-color: #114457;
+}
+
+/*  ---------- Styling in CA_Deatails ---------- */
+.div_CA {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#head_CA {
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+}
+
+#btn_join {
+    height: 3rem;
+    font-size: 1.2rem;
 }
 
 /*  ---------- Styling in ImagePart ---------- */
@@ -116,20 +132,19 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1rem 0px 0px 0px;
 }
 
-.footer_msu_logo{
+.footer_msu_logo {
     margin-bottom: 1rem;
 }
 
 #img_msulogo {
-    width: 22rem;
-    /* width: 300px; */
+    width: 21rem;
 }
 
 .footer_social_media {
-    /* width: 50%; */
-    width: 88%;
+    width: 78%;
     margin-top: 0.75rem;
 }
 
@@ -137,8 +152,7 @@ body {
 .media_icons {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    gap: 0.625rem;
+    justify-content: space-evenly;
     padding: 0px;
 }
 
@@ -156,6 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    font-size: 1.2rem;
 }
 
 .Phone_div {
@@ -164,6 +179,8 @@ body {
 
 #webTeamBtn {
     width: 8.12rem;
+    height: 3rem;
+    font-size: 1.2rem;
 }
 
 #div_teambtn {
@@ -186,6 +203,7 @@ body {
 .footer_div_CopyRight p {
     margin-top: 0;
     margin-bottom: 0rem;
+    font-size: 1.2rem;
 }
 
 
@@ -194,7 +212,6 @@ body {
 
 /* Styling in Item */
 .footer_Item {
-    /* border: 1px solid white; */
     padding: 1.56rem;
 }
 
@@ -236,7 +253,6 @@ body {
 }
 
 #footer a {
-    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -248,15 +264,389 @@ body {
     margin-left: auto;
 }
 
+.footer_P_hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer_P_hover:hover {
+    color: var(--icon-color);
+}
+
 /* ----------------------- Media Queries -------------------------  */
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:334px) {
+
+
+    :root {
+        font-size: 8px;
+    }
+
+    #newsletter_info {
+        font-size: 1.25rem;
+    }
+
+    #email-textbox {
+        font-size: 1.5rem;
+    }
+
+    .footer_btn {
+        width: 7.06rem;
+        height: 3.3rem;
+        font-size: 1.2rem;
+    }
+
+    #head_CA {
+        font-size: 1.5rem;
+    }
+
+
+    #img_msulogo {
+        width: 23rem;
+    }
+
+    .social {
+        font-size: 2.2rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.5rem;
+    }
+
+   #footer_div_newsLetter {
+    padding: 1.56rem;
+}
+
+}
+
+@media screen and (min-width:334px) and (max-width:416px) {
+
+    :root {
+        font-size: 10px;
+    }
+
+    #newsletter_info {
+        margin: 1.19rem 0rem;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #email-textbox {
+        font-size: 1.5rem;
+    }
+
+    #head_CA {
+        font-size: 1.5rem;
+    }
+
+    #btn_join {
+        font-size: 1.2rem;
+        width: 9rem;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+
+    
+   #footer_div_newsLetter {
+    padding: 1.56rem;
+}
+
+}
+
+@media screen and (min-width:416px) and (max-width:576px) {
+
+    :root {
+        font-size: 13px;
+    }
+    
+    #email-textbox {
+        font-size: 1.5rem;
+    }
+
+    #head_CA {
+        font-size: 1.5rem;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+    
+    #btn_join {
+        height: 2.5rem;
+    }
+
+   #footer_div_newsLetter {
+        padding: 1.56rem;
+    }
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:667px) {
+
+    :root {
+        font-size: 8.2px;
+    }
+
+    #newsletter_info {
+        font-size: 1.24rem;
+    }
+
+    #head_CA {
+        font-size: 1.5rem;
+    }
+
+    #img_msulogo {
+        width: 25rem;
+    }
+
+    .social {
+        font-size: 2.4rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:667px) and (max-width:776px) {
+
+    :root {
+        font-size: 10px;
+    }
+
+    #newsletter_info {
+        font-size: 1.21rem;
+    }
+
+    #head_CA {
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+    }
+
+    #btn_join {
+        height: 3rem;
+        font-size: 1.2rem;
+        width: 10rem;
+    }
+
+    #img_msulogo {
+        width: 24rem;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.5rem;
+    }
+
+    .footer_btn {
+        width: 6.5rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (min-width:776px) and (max-width:831px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+    #newsletter_info {
+        font-size: 1.2rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.3rem;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:831px) and (max-width:941px) {
+
+    :root {
+        font-size: 13px;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:941px) and (max-width:992px) {
+
+    :root {
+        font-size: 15px;
+    }
+
+    #head_CA {
+        font-size: 1.25rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.2rem;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1083px) {
+
+    :root {
+        font-size: 10px;
+    }
+
+    .footer_header {
+        font-size: 2.2rem;
+    }
+
+    #newsletter_info {
+        font-size: 1.20rem;
+    }
+
+    .footer_btn {
+        height: 2.5rem;
+    }
+
+    .social {
+        font-size: 2.2rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.4rem;
+    }
+
+    #img_msulogo {
+        width: 22rem;
+    }
+
+    #footer_div_newsLetter {
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width:1083px) and (max-width:1164px) {
+
+    :root {
+        font-size: 11px;
+    }
+
+    #newsletter_info {
+        font-size: 1.21rem;
+    }
+
+    #footer_div_contact {
+        /* font-size: 1.2rem; */
+        font-size: 1.15rem;
+    }
+
+    #head_CA {
+        font-size: 1.20rem;
+    }
+
+
+}
+
+@media screen and (min-width:1164px) and (max-width:1193px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+    #head_CA {
+        font-size: 1.20rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.1rem;
+    }
+
+    #newsletter_info {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1194px) and (max-width:1263px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+    #img_msulogo {
+        width: 21rem;
+    }
+
+    #footer_div_contact {
+        font-size: 1.1rem;
+    }
+
+    #newsletter_info {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1263px) and (max-width:1329px) {
+
+    :root {
+        font-size: 13px;
+    }
+
+    #head_CA {
+        font-size: 1.28rem;
+    }
+
+    #img_msulogo {
+        width: 20rem;
+    }
+
+
+    #footer_div_contact {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:1329px) and (max-width:1413px) {
+
+    :root {
+        font-size: 14px;
+    }
+
+    #head_CA {
+        font-size: 1.18rem;
+    }
+
+    #img_msulogo {
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width:1413px) and (max-width:1493px) {
+
+    :root {
+        font-size: 15px;
+    }
+
     /* --- NewsLetter ---- */
 
     #head_NL {
         /* border: 1px solid red; */
-        font-size: 1.7rem;
-        letter-spacing: 0px;
+        font-size: 2.2rem;
+        letter-spacing: 3px;
     }
 
     #footer_form {
@@ -264,7 +654,7 @@ body {
     }
 
     #email-textbox {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 100%;
         height: 2.62rem;
         padding: 0rem 0.3rem;
@@ -277,11 +667,11 @@ body {
     }
 
     #img_msulogo {
-        width: 15rem;
+        width: 19rem;
     }
 
     .media_icons {
-      gap: 0px;
+        gap: 0px;
     }
 
     .footer_Item {
@@ -289,17 +679,18 @@ body {
     }
 
     .footer_social_media {
-        width: 88%;
+        width: 70%;
     }
 
     .footer_div_CopyRight {
         height: auto;
         font-size: 0.9rem;
     }
+}
 
+@media screen and (min-width:1493px) {
 
-
-
-    #head_CI {}
-
+    #head_CA {
+        font-size: 1.1rem;
+    }
 }
