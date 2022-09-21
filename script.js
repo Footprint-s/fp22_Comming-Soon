@@ -1,4 +1,5 @@
 // add "send email" button DOM and set id="send" in index file
+
 sendBtn = document.getElementById("send");
 const email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -39,3 +40,40 @@ sendBtn.addEventListener("click", () => {
     alert("E-mail address is not valid.");
   }
 });
+
+
+// --- Logic Of Sponsors Slider (Added by Abdeali) --- //
+
+$(document).ready(function () {
+  $('.swiper-wrapper').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    speed: 500,
+    infinite: true,
+    autoplaySpeed: 5000,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 567,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+});
+

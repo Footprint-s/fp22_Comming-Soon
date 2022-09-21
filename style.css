@@ -12,21 +12,186 @@
     --background-color: #17262b;
     --font-color: #FFFFFF;
     --icon-color: #46aeaa;
-    --NormalMargin: 5px;
+    --NormalMargin: 15px;
     --NormalPadding: 5px;
     font-size: 16px;
 }
 
+
 /* Stlyling In Body */
 body {
+    background-color: var(--background-color);
     color: var(--font-color);
     font-family: 'Outfit', sans-serif;
 }
 
-/* -------   Styling in Footer(Contact) --------- */
+/* Styling In Common Parts/Segmentd (Add Here Your Common segments/element) */
+
+section {
+    margin-top: 2.5rem;
+}
+
+/* *****************  Styling in Sponsors ************ */
+
+#sponsors {
+    background-color: var(--background-color);
+}
+
+#sponsors img {
+    width: 100%;
+    height: 50%;
+    border: 1.25rem solid #1b3438;
+    object-fit: contain;
+    border-radius: 1.25rem;
+    box-shadow: 7px 7px 10px 2px black;
+    transition: all .5s;
+}
+
+#sponsors img:hover {
+    border: 1.25rem solid #31585e;
+}
+
+.div_header_sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor_header {
+    font-size: 2.25rem;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--icon-color);
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+/* -------------------------------------------------------- */
+
+/* Slider : InBuilt class  || Alert : Do not Modify !! */
+
+.slick-slider {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/* my added */
+
+#sponsors .slick-current img {
+    transform: scale(1.1);
+}
+
+/* *************   Styling in Footer(Contact) *************** */
 
 #footer {
     background-color: var(--background-color);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 /*  ---------- Styling in Newslwtter ---------- */
@@ -34,15 +199,13 @@ body {
 #footer_div_newsLetter {
     display: flex;
     flex-direction: column;
-    align-items: inherit;
-    gap: 1rem;
+    gap: 2.5rem;
     padding: 1.56rem 0px 1.56rem 1.56rem;
 }
 
-.div_NL {
+.div_footer_header {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
 }
 
 #newsletter_info {
@@ -101,28 +264,11 @@ body {
     background-color: #1b3438;
     border: 0.5px solid white;
     cursor: pointer;
+
 }
 
 .footer_btn:hover {
     background-color: #114457;
-}
-
-/*  ---------- Styling in CA_Deatails ---------- */
-.div_CA {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#head_CA {
-    font-size: 1.3rem;
-    letter-spacing: 0px;
-}
-
-#btn_join {
-    height: 3rem;
-    font-size: 1.2rem;
 }
 
 /*  ---------- Styling in ImagePart ---------- */
@@ -140,7 +286,10 @@ body {
 }
 
 #img_msulogo {
-    width: 21rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: invert(100%);
 }
 
 .footer_social_media {
@@ -169,7 +318,6 @@ body {
 #footer_div_contact {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
     font-size: 1.2rem;
 }
 
@@ -278,7 +426,6 @@ body {
 
 @media screen and (max-width:334px) {
 
-
     :root {
         font-size: 8px;
     }
@@ -297,15 +444,6 @@ body {
         font-size: 1.2rem;
     }
 
-    #head_CA {
-        font-size: 1.5rem;
-    }
-
-
-    #img_msulogo {
-        width: 23rem;
-    }
-
     .social {
         font-size: 2.2rem;
     }
@@ -314,9 +452,13 @@ body {
         font-size: 1.5rem;
     }
 
-   #footer_div_newsLetter {
-    padding: 1.56rem;
-}
+    #footer_div_newsLetter {
+        padding: 1.56rem;
+    }
+
+    #sponsors .slick-current img {
+        transform: scale(0.8);
+    }
 
 }
 
@@ -336,10 +478,6 @@ body {
         font-size: 1.5rem;
     }
 
-    #head_CA {
-        font-size: 1.5rem;
-    }
-
     #btn_join {
         font-size: 1.2rem;
         width: 9rem;
@@ -349,11 +487,41 @@ body {
         font-size: 2rem;
     }
 
-    
-   #footer_div_newsLetter {
-    padding: 1.56rem;
+
+    #footer_div_newsLetter {
+        padding: 1.56rem;
+    }
+
+    #sponsors .slick-current img {
+        transform: scale(0.8);
+    }
+
 }
 
+@media screen and (min-width:416px) and (max-width:479px) {
+    :root {
+        font-size: 13px;
+    }
+
+    #email-textbox {
+        font-size: 1.5rem;
+    }
+
+    .social {
+        font-size: 2rem;
+    }
+
+    #btn_join {
+        height: 2.5rem;
+    }
+
+    #footer_div_newsLetter {
+        padding: 1.56rem;
+    }
+
+    #sponsors .slick-current img {
+        transform: scale(0.7);
+    }
 }
 
 @media screen and (min-width:416px) and (max-width:576px) {
@@ -361,27 +529,22 @@ body {
     :root {
         font-size: 13px;
     }
-    
-    #email-textbox {
-        font-size: 1.5rem;
-    }
 
-    #head_CA {
+    #email-textbox {
         font-size: 1.5rem;
     }
 
     .social {
         font-size: 2rem;
     }
-    
+
     #btn_join {
         height: 2.5rem;
     }
 
-   #footer_div_newsLetter {
+    #footer_div_newsLetter {
         padding: 1.56rem;
     }
-
 
 }
 
@@ -393,14 +556,6 @@ body {
 
     #newsletter_info {
         font-size: 1.24rem;
-    }
-
-    #head_CA {
-        font-size: 1.5rem;
-    }
-
-    #img_msulogo {
-        width: 25rem;
     }
 
     .social {
@@ -422,19 +577,11 @@ body {
         font-size: 1.21rem;
     }
 
-    #head_CA {
-        font-size: 1.5rem;
-        letter-spacing: 0px;
-    }
 
     #btn_join {
         height: 3rem;
         font-size: 1.2rem;
         width: 10rem;
-    }
-
-    #img_msulogo {
-        width: 24rem;
     }
 
     .social {
@@ -489,10 +636,6 @@ body {
         font-size: 15px;
     }
 
-    #head_CA {
-        font-size: 1.25rem;
-    }
-
     #footer_div_contact {
         font-size: 1.2rem;
     }
@@ -526,11 +669,7 @@ body {
     }
 
     #footer_div_contact {
-        font-size: 1.4rem;
-    }
-
-    #img_msulogo {
-        width: 22rem;
+        font-size: 1.3rem;
     }
 
     #footer_div_newsLetter {
@@ -551,14 +690,8 @@ body {
     }
 
     #footer_div_contact {
-        /* font-size: 1.2rem; */
         font-size: 1.15rem;
     }
-
-    #head_CA {
-        font-size: 1.20rem;
-    }
-
 
 }
 
@@ -566,10 +699,6 @@ body {
 
     :root {
         font-size: 12px;
-    }
-
-    #head_CA {
-        font-size: 1.20rem;
     }
 
     #footer_div_contact {
@@ -587,10 +716,6 @@ body {
         font-size: 12px;
     }
 
-    #img_msulogo {
-        width: 21rem;
-    }
-
     #footer_div_contact {
         font-size: 1.1rem;
     }
@@ -606,15 +731,6 @@ body {
         font-size: 13px;
     }
 
-    #head_CA {
-        font-size: 1.28rem;
-    }
-
-    #img_msulogo {
-        width: 20rem;
-    }
-
-
     #footer_div_contact {
         font-size: 1.1rem;
     }
@@ -625,14 +741,6 @@ body {
     :root {
         font-size: 14px;
     }
-
-    #head_CA {
-        font-size: 1.18rem;
-    }
-
-    #img_msulogo {
-        width: 20rem;
-    }
 }
 
 @media screen and (min-width:1413px) and (max-width:1493px) {
@@ -641,10 +749,7 @@ body {
         font-size: 15px;
     }
 
-    /* --- NewsLetter ---- */
-
     #head_NL {
-        /* border: 1px solid red; */
         font-size: 2.2rem;
         letter-spacing: 3px;
     }
@@ -654,20 +759,14 @@ body {
     }
 
     #email-textbox {
-        /* border: 1px solid red; */
         width: 100%;
         height: 2.62rem;
         padding: 0rem 0.3rem;
         border: none;
         outline: none;
         font-size: 1rem;
-        /* letter-spacing: 2px; */
         color: #FFFFFF;
         background-color: #1b3438;
-    }
-
-    #img_msulogo {
-        width: 19rem;
     }
 
     .media_icons {
@@ -685,12 +784,5 @@ body {
     .footer_div_CopyRight {
         height: auto;
         font-size: 0.9rem;
-    }
-}
-
-@media screen and (min-width:1493px) {
-
-    #head_CA {
-        font-size: 1.1rem;
     }
 }
