@@ -50,9 +50,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    speed: 500,
+    speed: 300,
     infinite: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 1500,
     autoplay: true,
     responsive: [
       {

@@ -17,6 +17,28 @@
     font-size: 16px;
 }
 
+/* -- scrollbar  --*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #232323;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    /* background: #ba8fcf;  */
+    background: #555;
+    border-radius: 20px;
+    border: 2px solid #232323;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(184, 181, 181, 0.575);
+}
 
 /* Stlyling In Body */
 body {
