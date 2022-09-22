@@ -39,13 +39,13 @@ sendBtn.addEventListener("click", () => {
   } else {
     alert("E-mail address is not valid.");
   }
+  email.value = "";
 });
-
 
 // --- Logic Of Sponsors Slider (Added by Abdeali) --- //
 
 $(document).ready(function () {
-  $('.swiper-wrapper').slick({
+  $(".swiper-wrapper").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
@@ -59,21 +59,20 @@ $(document).ready(function () {
         breakpoint: 991,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
         breakpoint: 567,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   });
 });
-
