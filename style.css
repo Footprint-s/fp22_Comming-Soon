@@ -333,7 +333,7 @@ section {
 
 .social:hover {
     color: var(--icon-color);
-    tranform:scale(1.2);
+    tranform:scale(1.5);
 }
 
 /*  ---------- Styling in Contact ---------- */
