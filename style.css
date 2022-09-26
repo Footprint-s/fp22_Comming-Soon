@@ -8,7 +8,6 @@
 }
 
 :root {
-
     --background-color: #17262b;
     --font-color: #FFFFFF;
     --icon-color: #46aeaa;
@@ -17,7 +16,8 @@
     font-size: 16px;
 }
 
-/* -- scrollbar  --*/
+/* ************ scrollbar ************ */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -29,7 +29,6 @@
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-    /* background: #ba8fcf;  */
     background: #555;
     border-radius: 20px;
     border: 2px solid #232323;
@@ -37,40 +36,341 @@ body::-webkit-scrollbar-thumb {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(184, 181, 181, 0.575);
+    background: var(--icon-color);
 }
 
 /* Stlyling In Body */
+html,
 body {
     background-color: var(--background-color);
     color: var(--font-color);
     font-family: 'Outfit', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-/* Styling In Common Parts/Segmentd (Add Here Your Common segments/element) */
+/* Styling In Common(Tags) */
 
 section {
     margin-top: 2.5rem;
 }
 
-/* *****************  Styling in Sponsors ************ */
 
-#sponsors {
-    background-color: var(--background-color);
+/* ****************   Styling In Gallery Segements ************* */
+
+.title {
+    /* color: #38B4AB; */
+    color: var(--font-color);
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 6rem;
+    text-align: center;
 }
+
+.ruler-1 {
+    margin-top: -0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    width: 8%;
+}
+
+iframe {
+    max-width: 100%;
+    width: 25rem;
+    height: 15rem;
+    margin: 1rem;
+    border: 4px solid #38b4ac18;
+}
+
+.gallery {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ruler-2 {
+    margin-top: -0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    width: 38%;
+}
+
+@media (max-width: 768px) {
+    .ruler-2 {
+        width: 20%;
+    }
+}
+
+.f-video {
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 18.75rem;
+}
+
+/* Image Hover Part */
+.ig-overlay img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.gallery-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.f-video:hover .image {
+    opacity: 0.3;
+    background-color: #133d3992;
+    border: 4px solid #38b4ac18;
+}
+
+.f-video .ig-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    opacity: 0;
+}
+
+.f-video:hover .ig-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+    opacity: 1;
+}
+
+#head_flashBack{
+    margin-bottom: 1.5rem;
+}
+/* ------- CA PAGE ------- */
+.ca-margin {
+    margin-top: 6rem;
+}
+
+.title-2 {
+    color: #38B4AB;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+p {
+    color: #fff;
+}
+
+.ca-btn a {
+    text-decoration: none;
+    color: #38B4AB;
+}
+
+.ca-btn {
+    color: #38B4AB;
+    background-color: #fff;
+    padding: 1.2%;
+    border-radius: 0.4rem;
+}
+
+.ca-btn:hover a {
+    color: #fff;
+}
+
+.ca-btn:hover {
+    background-color: #38B4AB;
+}
+
+.ca-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 970px) and (max-width: 1024px) {
+    .title-2 {
+        margin: 0;
+    }
+}
+
+/* ------- Team page ------- */
+.team-page {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.team {
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #13161C;
+    padding-bottom: 0.6rem;
+}
+
+#heading_Team {
+    color: #13161C;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.profile {
+    margin-top: 2.5rem;
+}
+
+.profile .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+    box-shadow: 4px 4px 3px rgb(196, 196, 196);
+    -moz-box-shadow: 4px 4px 3px rgb(180, 180, 180);
+    -webkit-box-shadow: 4px 4px 3px rgb(180, 180, 180);
+    -khtml-box-shadow: 4px 4px 3px rgb(180, 180, 180);
+}
+
+.profile h2 {
+    font-size: 1.37rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    color: #13161C;
+}
+
+.img-box:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.img-box ul {
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    left: 10%;
+    top: 78%;
+    transform: translate(-50%);
+    opacity: 0;
+    font-size: 1.4rem;
+}
+
+.img-box ul li {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 6%;
+    padding: 0.1px;
+    display: inline-block;
+}
+
+.img-box a {
+    color: #fff;
+}
+
+.img-box:hover:after {
+    opacity: 1;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box a:hover {
+    color: rgba(255, 255, 255, 0.379);
+}
+
+.img-box:after,
+.img-box ul,
+.img-box ul li {
+    -webkit-transition: all 0.5s ease-in-out 0s;
+}
+
+/* *****************  Styling in Achivments Part ************ */
+
+#achievements {
+    margin-top: 4%;
+    color: #ffffff;
+    padding-bottom: 5%;
+}
+
+.achievements-head {
+    margin: 4%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: fit-content;
+    margin-bottom: 40px;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+/* Style Added By Abdeali to Make Image Clear */
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.2rem;
+}
+
+.div_achivments {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.achivments_img {
+    width: 67%;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.div_achivments_text {
+    font-size: 1.35rem;
+    display: inline-block;
+    margin-left: 0%;
+}
+
+/* *****************  Styling in Sponsors ************ */
 
 #sponsors img {
     width: 100%;
     height: 50%;
-    border: 1.25rem solid #1b3438;
+    border: 2px solid #1b3438;
     object-fit: contain;
-    border-radius: 1.25rem;
-    box-shadow: 7px 7px 10px 2px black;
-    transition: all .5s;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 2px rgba(0, 0, 0, 0.3);
+    transition: all 300ms;
 }
 
 #sponsors img:hover {
-    border: 1.25rem solid #31585e;
+    border: 5px solid #31585e;
 }
 
 .div_header_sponsor {
@@ -82,15 +382,19 @@ section {
 .sponsor_header {
     font-size: 2.25rem;
     letter-spacing: 3px;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
     border-bottom: 2px solid var(--icon-color);
     text-align: center;
     margin: 1rem 1rem;
 }
 
+#head_sponsors {
+    margin-bottom: 2rem;
+}
+
 /* -------------------------------------------------------- */
 
-/* Slider : InBuilt class  || Alert : Do not Modify !! */
+/* Slider : InBuilt class  || Warning : Do not Modify!! */
 
 .slick-slider {
     position: relative;
@@ -148,6 +452,7 @@ section {
 .slick-track:before,
 .slick-track:after {
     display: table;
+
     content: '';
 }
 
@@ -193,7 +498,9 @@ section {
 
 .slick-vertical .slick-slide {
     display: block;
+
     height: auto;
+
     border: 1px solid transparent;
 }
 
@@ -202,18 +509,43 @@ section {
 }
 
 
-/* my added */
+/* Abdeali added */
 
 #sponsors .slick-current img {
+    transform: scale(1.2);
+    border: none;
+    border-radius: 10px;
+}
+
+#sponsors .slick-current img:hover {
     transform: scale(1.1);
+    border: 5px solid #31585e;
+}
+
+
+.slick-slide>div {
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.slick-center>div {
+    transform: scale(1);
+}
+
+.slider__item>img {
+    width: 100%;
+    height: auto;
 }
 
 /* *************   Styling in Footer(Contact) *************** */
 
 #footer {
-    background-color: var(--background-color);
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    background-color: #020a08ab;
+}
+
+#footer .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
 }
 
 /*  ---------- Styling in Newslwtter ---------- */
@@ -221,8 +553,8 @@ section {
 #footer_div_newsLetter {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    padding: 1.56rem 0px 1.56rem 1.56rem;
+    gap: 2.5em;
+    padding: 1.56em 0px 1.56em 1.56em;
 }
 
 .div_footer_header {
@@ -231,14 +563,14 @@ section {
 }
 
 #newsletter_info {
-    margin: 1.19rem 0rem;
+    margin: 1.19em 0em;
     width: 100%;
-    font-size: 1.12rem;
+    font-size: 1.12em;
     letter-spacing: 1px;
 }
 
 #footer_form {
-    margin: 0rem;
+    margin: 0em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,11 +582,11 @@ section {
 
 #email-textbox {
     width: 100%;
-    height: 2.62rem;
-    padding: 0rem 0.625rem;
+    height: 2.62em;
+    padding: 0em 0.625em;
     border: none;
     outline: none;
-    font-size: 1.125rem;
+    font-size: 1.125em;
     letter-spacing: 2px;
     color: #FFFFFF;
     background-color: #1b3438;
@@ -272,21 +604,20 @@ section {
 }
 
 .footer_btn {
-    margin: 0.06rem 0.5rem;
+    margin: 0.06em 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6.06rem;
-    height: 2.3rem;
+    width: 6.06em;
+    height: 2.2em;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 1.1em;
     letter-spacing: 1px;
     border-radius: 5px;
     color: white;
     background-color: #1b3438;
     border: 0.5px solid white;
     cursor: pointer;
-
 }
 
 .footer_btn:hover {
@@ -298,13 +629,12 @@ section {
 #footer_div_image {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 0px 0px 0px;
+    padding: 1em 0px 0px 0px;
 }
 
 .footer_msu_logo {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 #img_msulogo {
@@ -314,11 +644,14 @@ section {
     filter: invert(100%);
 }
 
-.footer_social_media {
-    width: 78%;
-    margin-top: 0.75rem;
+#img_msulogo:hover {
+    filter: invert(200%) opacity(0.7) drop-shadow(0 0 0 #46aeaa);
 }
 
+.footer_social_media {
+    width: 78%;
+    margin-top: 0.75em;
+}
 
 .media_icons {
     list-style: none;
@@ -328,12 +661,13 @@ section {
 }
 
 .social {
-    font-size: 1.62rem;
+    font-size: 1.62em;
+    transition: all 0.2s;
 }
 
 .social:hover {
     color: var(--icon-color);
-    tranform:scale(1.5);
+    transform: scale(1.5);
 }
 
 /*  ---------- Styling in Contact ---------- */
@@ -341,17 +675,21 @@ section {
 #footer_div_contact {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.12em;
 }
 
 .Phone_div {
     flex-wrap: wrap;
 }
 
+.Parent_Footer_Col3 {
+    font-size: 16px;
+}
+
 #webTeamBtn {
-    width: 8.12rem;
-    height: 3rem;
-    font-size: 1.2rem;
+    width: 7em;
+    height: 2em;
+    font-size: 1.2em;
 }
 
 #div_teambtn {
@@ -360,34 +698,33 @@ section {
     display: flex;
 }
 
-/* ---------- Styling in CopyRight ---------- */
-
-.footer_div_CopyRight {
-    text-align: center;
-    background: #1f3c46;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_div_CopyRight p {
-    margin-top: 0;
-    margin-bottom: 0rem;
-    font-size: 1.2rem;
-}
-
-
-
 /* -------  Utility classes --------  */
+
+
+/* Important : Parent Class Of all Footer Element */
+
+.Parent_Footer {
+    font-size: 16px;
+}
+
+.Parent_Footer_Col3 {
+    font-size: 16px;
+}
 
 /* Styling in Item */
 .footer_Item {
-    padding: 1.56rem;
+    padding: 1.56em;
 }
 
 .footer_header {
-    font-size: 2.25rem;
+    font-size: 2.3em;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--icon-color);
+}
+
+.gallery_header {
+    font-size: 2.3rem;
     letter-spacing: 3px;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--icon-color);
@@ -407,20 +744,20 @@ section {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    gap: 1.25rem;
-    margin-top: 1.56rem;
+    gap: 1.25em;
+    margin-top: 1.56em;
 }
 
-.con_icon {
+.contact_icon {
     color: var(--icon-color);
-    font-size: 2rem;
+    font-size: 1.7em;
 }
 
 /* ------------- Bootstrap classes -------------------  */
 
 #footer p {
     margin-top: 0;
-    margin-bottom: 0rem;
+    margin-bottom: 0em;
 }
 
 #footer a {
@@ -449,331 +786,564 @@ section {
 
 @media screen and (max-width:334px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 8px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 8px;
     }
 
     #newsletter_info {
-        font-size: 1.25rem;
+        font-size: 1.25em;
     }
 
     #email-textbox {
-        font-size: 1.5rem;
+        font-size: 1.1em;
     }
 
     .footer_btn {
-        width: 7.06rem;
-        height: 3.3rem;
-        font-size: 1.2rem;
+        width: 7em;
+        height: 2.3em;
+        font-size: 1.4em;
     }
 
     .social {
-        font-size: 2.2rem;
+        font-size: 2.2em;
     }
 
     #footer_div_contact {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     #footer_div_newsLetter {
-        padding: 1.56rem;
+        padding: 1.56em;
+    }
+
+    .sponsor_header {
+        font-size: 2em;
     }
 
     #sponsors .slick-current img {
         transform: scale(0.8);
+    }
+
+    #newsletter_info {
+        font-size: 1.7em;
+    }
+
+    .Parent_Footer_Col3 {
+        font-size: 12px;
+    }
+
+    #email-textbox {
+        font-size: 1.5em;
+    }
+
+    .sponsor_header {
+        font-size: 1.3rem;
+    }
+
+
+    #head_flashBack {
+        font-size: 1.2rem;
     }
 
 }
 
-@media screen and (min-width:334px) and (max-width:416px) {
 
-    :root {
-        font-size: 10px;
+@media screen and (min-width:334px) and (max-width:356px) {
+
+    .Parent_Footer {
+        font-size: 11px;
+
     }
 
-    #newsletter_info {
-        margin: 1.19rem 0rem;
-        width: 100%;
-        font-size: 1.2rem;
+    .Parent_Footer_Col3 {
+        font-size: 13px;
     }
 
     #email-textbox {
-        font-size: 1.5rem;
+        font-size: 1.1em;
     }
 
-    #btn_join {
-        font-size: 1.2rem;
-        width: 9rem;
+    .footer_btn {
+        width: 6.06em;
+        height: 2.3em;
+        font-size: 1.1em;
+    }
+
+    .footer_header {
+        font-size: 2em;
+    }
+
+    #newsletter_info {
+        margin: 1.19em 0em;
+        width: 100%;
+        font-size: 1.2em;
     }
 
     .social {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
 
     #footer_div_newsLetter {
-        padding: 1.56rem;
+        padding: 1.56em;
     }
 
     #sponsors .slick-current img {
-        transform: scale(0.8);
+        transform: scale(0.9);
+    }
+
+
+    #head_sponsors {
+        font-size: 2rem;
+    }
+
+    .sponsor_header {
+        font-size: 1.5rem;
+    }
+
+    #head_flashBack {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (min-width:356px) and (max-width:416px) {
+
+    .Parent_Footer {
+        font-size: 11px;
+
+    }
+
+    .Parent_Footer_Col3 {
+        font-size: 12px;
+    }
+
+    #newsletter_info {
+        margin: 1.19em 0em;
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    #email-textbox {
+        font-size: 1.2em;
+    }
+
+    #btn_join {
+        font-size: 1.2em;
+        width: 7em;
+        height: 2.5em;
+    }
+
+    .footer_header {
+        font-size: 2.1em;
+    }
+
+    .social {
+        font-size: 2em;
+    }
+
+    #footer_div_newsLetter {
+        padding: 1.56em;
+    }
+
+    #sponsors .slick-current img {
+        transform: scale(0.9);
+    }
+
+    #head_sponsors {
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+    }
+
+    #head_flashBack {
+        font-size: 1.25rem;
     }
 
 }
 
 @media screen and (min-width:416px) and (max-width:479px) {
-    :root {
-        font-size: 13px;
-    }
-
-    #email-textbox {
-        font-size: 1.5rem;
-    }
-
-    .social {
-        font-size: 2rem;
-    }
-
-    #btn_join {
-        height: 2.5rem;
-    }
-
-    #footer_div_newsLetter {
-        padding: 1.56rem;
-    }
 
     #sponsors .slick-current img {
-        transform: scale(0.7);
+        transform: scale(0.9);
+    }
+
+    #head_sponsors {
+        font-size: 1.4rem;
+        margin-bottom: 0px;
     }
 }
 
-@media screen and (min-width:416px) and (max-width:576px) {
+@media screen and (min-width:416px) and (max-width:575px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 12px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 13px;
     }
 
     #email-textbox {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .social {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     #btn_join {
-        height: 2.5rem;
+        height: 2.5em;
     }
 
     #footer_div_newsLetter {
-        padding: 1.56rem;
+        padding: 1.56em;
+    }
+
+    .footer_btn {
+        height: 2.6em;
+    }
+
+
+    .sponsor_header {
+        font-size: 1.7rem;
+    }
+
+    #head_flashBack {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width:469px) and (max-width:479px) {
+        #sponsors .slick-current img {
+            transform: scale(1.1);
+        }
     }
 
 }
 
-@media screen and (min-width:576px) and (max-width:667px) {
+@media screen and (min-width:575px) and (max-width:667px) {
 
-    :root {
-        font-size: 8.2px;
+    .Parent_Footer {
+        font-size: 9px;
+    }
+
+    .Parent_Footer_Col3 {
+        font-size: 13px;
     }
 
     #newsletter_info {
-        font-size: 1.24rem;
+        font-size: 1.24em;
     }
 
     .social {
-        font-size: 2.4rem;
+        font-size: 2em;
     }
 
     #footer_div_contact {
-        font-size: 1.4rem;
+        font-size: 1.4em;
+    }
+
+    .sponsor_header {
+        font-size: 2rem;
+    }
+
+    #head_flashBack {
+        font-size: 2rem;
+    }
+
+    @media screen and (min-width:576px) and (max-width:642px) {
+        .Parent_Footer_Col3 {
+            font-size: 13px;
+        }
+
+        #newsletter_info {
+            font-size: 1.1em;
+        }
+
+        .footer_header {
+            font-size: 2em;
+        }
+
+        .sponsor_header {
+            font-size: 2rem;
+        }
     }
 }
 
 @media screen and (min-width:667px) and (max-width:776px) {
 
-    :root {
+    .Parent_Footer {
         font-size: 10px;
     }
 
+    .Parent_Footer_Col3 {
+        font-size: 13px;
+    }
+
     #newsletter_info {
-        font-size: 1.21rem;
+        font-size: 1.21em;
     }
 
-
-    #btn_join {
-        height: 3rem;
-        font-size: 1.2rem;
-        width: 10rem;
-    }
-
-    .social {
+    #head_flashBack {
         font-size: 2rem;
     }
 
+    #btn_join {
+        height: 3em;
+        font-size: 1.2em;
+        width: 10em;
+    }
+
+    .social {
+        font-size: 2em;
+    }
+
     #footer_div_contact {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .footer_btn {
-        width: 6.5rem;
-        height: 2.5rem;
-        font-size: 1.1rem;
+        width: 6.5em;
+        height: 2.5em;
+        font-size: 1.1em;
+    }
+
+    .footer_header {
+        font-size: 2em;
+    }
+
+    .sponsor_header {
+        font-size: 2rem;
     }
 
 }
 
 @media screen and (min-width:776px) and (max-width:831px) {
 
-    :root {
+    .Parent_Footer {
         font-size: 12px;
     }
 
+    .Parent_Footer_Col3 {
+        font-size: 14px;
+    }
+
     #newsletter_info {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
     #footer_div_contact {
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
 
     .social {
-        font-size: 2rem;
+        font-size: 2em;
     }
 }
 
 @media screen and (min-width:831px) and (max-width:941px) {
 
-    :root {
+    .Parent_Footer {
         font-size: 13px;
     }
 
+    .Parent_Footer_Col3 {
+        font-size: 15px;
+    }
+
     .social {
-        font-size: 2rem;
+        font-size: 2em;
+    }
+
+    #footer_div_contact {
+        font-size: 1.5em;
+    }
+
+    #webTeamBtn {
+        width: 6.4em;
     }
 }
 
 @media screen and (min-width:941px) and (max-width:992px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 15px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 15px;
     }
 
     #footer_div_contact {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
 
     .social {
-        font-size: 2rem;
+        font-size: 2em;
+    }
+
+    #webTeamBtn {
+        width: 6em;
     }
 
 }
 
 @media screen and (min-width:992px) and (max-width:1083px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 10px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 10px;
     }
 
     .footer_header {
-        font-size: 2.2rem;
+        font-size: 2.2em;
     }
 
     #newsletter_info {
-        font-size: 1.20rem;
+        font-size: 1.20em;
     }
 
     .footer_btn {
-        height: 2.5rem;
+        height: 2.5em;
     }
 
     .social {
-        font-size: 2.2rem;
+        font-size: 1.8em;
     }
 
     #footer_div_contact {
-        font-size: 1.3rem;
+        font-size: 1.24em;
     }
 
     #footer_div_newsLetter {
-        gap: 2rem;
+        gap: 2.5em;
     }
 
-
+    #webTeamBtn {
+        width: 6.2em;
+    }
 }
+
 
 @media screen and (min-width:1083px) and (max-width:1164px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 11px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 11px;
     }
 
     #newsletter_info {
-        font-size: 1.21rem;
+        font-size: 1.21em;
     }
 
     #footer_div_contact {
-        font-size: 1.15rem;
+        font-size: 1.15em;
+    }
+
+    #webTeamBtn {
+        width: 6em;
+        height: 1.8em;
     }
 
 }
 
 @media screen and (min-width:1164px) and (max-width:1193px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 12px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 12px;
     }
 
     #footer_div_contact {
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
 
     #newsletter_info {
-        font-size: 1.2rem;
+        font-size: 1.2em;
+    }
+
+    #webTeamBtn {
+        width: 7em;
     }
 }
 
 @media screen and (min-width:1194px) and (max-width:1263px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 12px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 12px;
     }
 
     #footer_div_contact {
-        font-size: 1.1rem;
+        font-size: 1.17em;
     }
 
     #newsletter_info {
-        font-size: 1.2rem;
+        font-size: 1.2em;
+    }
+
+    #webTeamBtn {
+        width: 7.12em;
+    }
+
+    .social {
+        font-size: 2em;
     }
 }
 
 @media screen and (min-width:1263px) and (max-width:1329px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 13px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 13px;
     }
 
     #footer_div_contact {
-        font-size: 1.1rem;
+        font-size: 1.1em;
     }
 }
 
 @media screen and (min-width:1329px) and (max-width:1413px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 14px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 14px;
     }
 }
 
 @media screen and (min-width:1413px) and (max-width:1493px) {
 
-    :root {
+    .Parent_Footer {
+        font-size: 15px;
+    }
+
+    .Parent_Footer_Col3 {
         font-size: 15px;
     }
 
     #head_NL {
-        font-size: 2.2rem;
+        font-size: 2.2em;
         letter-spacing: 3px;
     }
 
@@ -783,11 +1353,11 @@ section {
 
     #email-textbox {
         width: 100%;
-        height: 2.62rem;
-        padding: 0rem 0.3rem;
+        height: 2.62em;
+        padding: 0em 0.3em;
         border: none;
         outline: none;
-        font-size: 1rem;
+        font-size: 1em;
         color: #FFFFFF;
         background-color: #1b3438;
     }
@@ -797,15 +1367,10 @@ section {
     }
 
     .footer_Item {
-        padding: 1rem;
+        padding: 1em;
     }
 
     .footer_social_media {
         width: 70%;
-    }
-
-    .footer_div_CopyRight {
-        height: auto;
-        font-size: 0.9rem;
     }
 }

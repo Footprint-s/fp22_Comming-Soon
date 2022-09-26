@@ -1,4 +1,4 @@
-// add "send email" button DOM and set id="send" in index file
+              // Logic Of : Mail send //
 
 sendBtn = document.getElementById("send");
 const email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -42,37 +42,55 @@ sendBtn.addEventListener("click", () => {
   email.value = "";
 });
 
-// --- Logic Of Sponsors Slider (Added by Abdeali) --- //
-
+              // Logic Of : Sponsors Slicker //
 $(document).ready(function () {
-  $(".swiper-wrapper").slick({
-    slidesToShow: 4,
+  $('.swiper-wrapper').slick({
+    slidesToShow: 5,
     slidesToScroll: 1,
+    centerMode: true,
     arrows: false,
     dots: false,
     speed: 300,
     infinite: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
     autoplay: true,
     responsive: [
       {
         breakpoint: 991,
         settings: {
           slidesToShow: 3,
-        },
+        }
       },
       {
         breakpoint: 567,
         settings: {
           slidesToShow: 2,
-        },
+          centerMode: false
+
+        }
+      },
+      {
+        breakpoint: 556,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false
+        }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-        },
+          centerMode: false,
+          slidesToShow: 1
+        }
       },
-    ],
+      {
+        breakpoint: 468,
+        settings: {
+          centerMode: false,
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 });
+
