@@ -42,12 +42,12 @@ sendBtn.addEventListener("click", () => {
   email.value = "";
 });
 
-              // Logic Of : Sponsors Slicker //
+ // --- Logic Of Sponsors Slider --- //
 $(document).ready(function () {
-  $('.swiper-wrapper').slick({
+  $('.Sponsors_swiper_Rappers').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode:true,
     arrows: false,
     dots: false,
     speed: 300,
@@ -65,7 +65,7 @@ $(document).ready(function () {
         breakpoint: 567,
         settings: {
           slidesToShow: 2,
-          centerMode: false
+          centerMode:false
 
         }
       },
@@ -73,20 +73,20 @@ $(document).ready(function () {
         breakpoint: 556,
         settings: {
           slidesToShow: 2,
-          centerMode: false
+          centerMode:false
         }
       },
       {
         breakpoint: 480,
         settings: {
-          centerMode: false,
+          centerMode:false,
           slidesToShow: 1
         }
       },
       {
         breakpoint: 468,
         settings: {
-          centerMode: false,
+          centerMode:false,
           slidesToShow: 1
         }
       }
@@ -94,3 +94,61 @@ $(document).ready(function () {
   });
 });
 
+// ----------- Logic of Testimonials -------------- //
+
+new Swiper('.testimonials-slider', {
+  speed: 900,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  breakpoints: {
+    250: {
+      slidesPerView: 1,
+      // spaceBetween: 20
+    },
+    350: {
+      slidesPerView: 1,
+      // spaceBetween: 20
+    },
+    468: {
+      slidesPerView: 1,
+      // spaceBetween: 20
+    },
+    480: {
+      slidesPerView: 1,
+      // spaceBetween: 20
+    },
+    556: {
+      slidesPerView: 2,
+      // spaceBetween: 20
+    },
+    567: {
+      slidesPerView: 2,
+      // spaceBetween: 20
+    },
+    991: {
+      slidesPerView: 3,
+      // spaceBetween: 20
+    },
+
+    1199: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }
+});
+
+
+// tetimonials //
+
+// $(document).ready(function(){
+//   $(".swiper-slide").equalHeights(); 
+// });

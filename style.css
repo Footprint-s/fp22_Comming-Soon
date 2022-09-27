@@ -58,14 +58,45 @@ section {
 
 /* ****************   Styling In Gallery Segements ************* */
 
+/* Gallery CSS */
+
 .title {
     /* color: #38B4AB; */
-    color: var(--font-color);
     font-family: 'Outfit', sans-serif;
     font-size: 2.5rem;
     font-weight: 300;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    margin-top: 2rem;
     text-align: center;
+}
+
+.ruler-1 {
+    margin-top: -0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    width: 11%;
+}
+
+.gallery-Item {
+    max-width: 100%;
+    width: 25rem;
+}
+
+.gallery {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Video */
+
+.ytvideo {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .ruler-1 {
@@ -84,7 +115,7 @@ iframe {
     border: 4px solid #38b4ac18;
 }
 
-.gallery {
+.gallery-v {
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -92,6 +123,21 @@ iframe {
     flex-wrap: wrap;
 }
 
+/* My added */
+#Galley_gal .container {
+    margin-bottom: 10px;
+}
+
+#Gallery_flashback .container {
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    cursor: pointer;
+}
+
+
+/* Flasback Friday Portion */
 .ruler-2 {
     margin-top: -0.5rem;
     margin-left: auto;
@@ -157,10 +203,10 @@ iframe {
     opacity: 1;
 }
 
-#head_flashBack{
-    margin-bottom: 1.5rem;
-}
-/* ------- CA PAGE ------- */
+
+
+
+/* CA PAGE */
 .ca-margin {
     margin-top: 6rem;
 }
@@ -170,23 +216,62 @@ iframe {
     font-family: 'Outfit', sans-serif;
     font-size: 2.5rem;
     font-weight: 300;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
-p {
+.title-2:after {
+    content: '';
+    background: #fff;
+    display: block;
+    height: 1px;
+    width: 20rem;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 368px) {
+    .title-2:after {
+        width: 15rem;
+    }
+
+}
+
+.ca-p {
     color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.ca-p2 {
+    color: #38B4AB;
+    font-size: large;
+    letter-spacing: 2px;
+
+}
+
+.ca-p3 {
+    color: #38B4AB;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+
 }
 
 .ca-btn a {
     text-decoration: none;
     color: #38B4AB;
+    transition: all 0.3s;
+
 }
 
 .ca-btn {
     color: #38B4AB;
     background-color: #fff;
+    /* margin-top: 5%; */
     padding: 1.2%;
     border-radius: 0.4rem;
+    transition: all 0.5s;
+    font-weight: bold;
 }
 
 .ca-btn:hover a {
@@ -202,15 +287,20 @@ p {
     justify-content: space-evenly;
 }
 
-@media (min-width: 970px) and (max-width: 1024px) {
-    .title-2 {
-        margin: 0;
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    .ca-p,
+    .ca-p2,
+    .ca-p3 {
+        font-size: 0.85rem;
     }
+
 }
 
-/* ------- Team page ------- */
+
+/* Team page */
 .team-page {
-    background-color: white;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -229,13 +319,17 @@ p {
     padding-bottom: 0.6rem;
 }
 
-#heading_Team {
-    color: #13161C;
+h1:after {
+    content: '';
+    background: #13161C;
+    display: block;
+    height: 2px;
+    width: 8.3rem;
+    margin: 0px auto;
 }
 
-.profile img {
+.img-box img {
     width: 100%;
-    border-radius: 4px;
 }
 
 .profile {
@@ -250,18 +344,20 @@ p {
     -moz-box-shadow: 4px 4px 3px rgb(180, 180, 180);
     -webkit-box-shadow: 4px 4px 3px rgb(180, 180, 180);
     -khtml-box-shadow: 4px 4px 3px rgb(180, 180, 180);
+
+
 }
 
 .profile h2 {
     font-size: 1.37rem;
     font-weight: 300;
     margin-top: 1rem;
-    color: #13161C;
 }
 
 .img-box:after {
     content: '';
     opacity: 0;
+    background-color: #13161caa;
     position: absolute;
     right: 0;
     left: 0;
@@ -275,7 +371,7 @@ p {
     position: absolute;
     z-index: 2;
     display: block;
-    left: 10%;
+    left: 90%;
     top: 78%;
     transform: translate(-50%);
     opacity: 0;
@@ -289,6 +385,7 @@ p {
     border-radius: 6%;
     padding: 0.1px;
     display: inline-block;
+
 }
 
 .img-box a {
@@ -316,9 +413,7 @@ p {
 /* *****************  Styling in Achivments Part ************ */
 
 #achievements {
-    margin-top: 4%;
     color: #ffffff;
-    padding-bottom: 5%;
 }
 
 .achievements-head {
@@ -356,6 +451,162 @@ p {
     display: inline-block;
     margin-left: 0%;
 }
+
+.div_myAchivments {
+    margin-top: 0px;
+}
+
+/* **************** Styling in Testimonials *********** */
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #3498db;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Testimonials */
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+    overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+    box-sizing: content-box;
+    padding: 30px 30px 0 30px;
+    margin: 30px 15px;
+    text-align: center;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.8);
+    background: #1b3438;
+    color: white;
+
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+    width: 90px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: var(--icon-color);
+    margin: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+    color: #e1f0fa;
+    font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+}
+
+.testimonials .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid var(--icon-color);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--icon-color);
+}
+
+#testimonials h3 {
+    border-bottom: 2px solid var(--icon-color);
+    display: inline-block;
+    align-items: center;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.Testimonial_swiper_Rappers {
+
+    /* important */
+    display: flex;
+    /* important */
+    align-items: stretch;
+
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    transition-property: transform;
+    height: auto;
+}
+
 
 /* *****************  Styling in Sponsors ************ */
 
