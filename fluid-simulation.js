@@ -22,7 +22,7 @@ var config = {
 	BLOOM: true,
 	BLOOM_ITERATIONS: 8,
 	BLOOM_RESOLUTION: 256,
-	BLOOM_INTENSITY: 0.0,
+	BLOOM_INTENSITY: 0.1,
 	BLOOM_THRESHOLD: 0.6,
 	BLOOM_SOFT_KNEE: 0.7,
 	SUNRAYS: true,
@@ -98,7 +98,6 @@ function getWebGLContext(canvas) {
 		formatR = getSupportedFormat(gl, gl.RGBA, gl.RGBA, halfFloatTexType);
 	}
 
-	// ga('send', 'event', isWebGL2 ? 'webgl2' : 'webgl', formatRGBA == null ? 'not supported' : 'supported');
 
 	return {
 		gl: gl,
