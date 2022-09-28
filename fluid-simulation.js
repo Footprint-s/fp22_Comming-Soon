@@ -1166,8 +1166,13 @@ if (pointer == null) {
 // 	updatePointerDownData(pointer, -1, posX, posY);
 // });
 updatePointerDownData(pointer, -1, 13, 97);
+var timeout
+canvas.addEventListener("mousemove", function (e) { 
+  if(timeout) clearTimeout(timeout);
+  timeout = setTimeout(()=>{
+    pointer.color = generateColor()
+  },500)
 
-canvas.addEventListener("mousemove", function (e) {
   var pointer = pointers[0];
   if (!pointer.down) {
     return;
@@ -1179,6 +1184,7 @@ canvas.addEventListener("mousemove", function (e) {
 
 window.addEventListener("mouseup", function () {
   updatePointerUpData(pointers[0]);
+  pointer.color = generateColor()
 });
 
 canvas.addEventListener("touchstart", function (e) {
@@ -1260,7 +1266,7 @@ function updatePointerMoveData(pointer, posX, posY) {
 }
 
 function updatePointerUpData(pointer) {
-  pointer.down = true;
+  pointer.down = true;  
 }
 
 function correctDeltaX(delta) {
@@ -1281,9 +1287,9 @@ function correctDeltaY(delta) {
 
 function generateColor() {
   var c = HSVtoRGB(Math.random(), 1.0, 1.0);
-  c.r = 0;
-  c.g = 0.038635396233870196;
-  c.b = 0.15;
+  c.r *= 0.15;
+  c.g *= 0.15;
+  c.b *= 0.15;
   console.log(c);
   return c;
 }
