@@ -49,10 +49,25 @@ body {
     overflow-x: hidden;
 }
 
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 1; */
+    /* background: linear-gradient(#10091c, #382060); */
+    /* background: linear-gradient(#10091c, #010b3c, #263238); */
+    background: linear-gradient(rgb(16, 9, 28), rgb(38, 50, 56));
+    position: fixed;
+}
 /* Styling In Common(Tags) */
 
 section {
     margin-top: 2.5rem;
+    width: fit-content;
+    position: relative;
+    margin-inline: auto;
 }
 
 
