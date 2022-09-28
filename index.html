@@ -1,308 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon-Fp'23</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon-Fp'23</title>
+    <!-- Bootstrap Link (CSS)-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap Link (CSS)-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Our CSS -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Libraries For Sponsor Slicker -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-  <!-- Libraries For Sponsor Slicker -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!-- Javascript File -->
+    <script src="./script.js" defer></script>
 
-  <!-- Javascript File -->
-  <script src="./script.js" defer></script>
+    <!-- Font-Awsome Library -->
+    <script
+      src="https://kit.fontawesome.com/ee0e179fc9.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font-Awsome Library -->
-  <script src="https://kit.fontawesome.com/ee0e179fc9.js" crossorigin="anonymous"></script>
+    <!-- Library for Testimonials -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./stylenav.css" />
+  </head>
 
-  <!-- Library for Testimonials -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <body>
+    <!-- Achivments Part -->
+    <canvas></canvas>
 
-</head>
+    <section class="header">
+      <nav>
+        <a href="#"
+          ><img
+            src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1664372046/Gallery%20Section%20Coming%20Soon%2723/fp-logo_cmlka1.png"
+            alt="Logo"
+            class="nav-logo"
+        /></a>
 
-<body>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
 
-  <!-- Achivments Part -->
-  <canvas></canvas>
+            <li><a href="#">ABOUT</a></li>
+
+            <li><a href="#">SEGMENTS</a></li>
+
+            <li><a href="#">ACHIEVEMENTS</a></li>
+
+            <li><a href="#">TESTIMONIALS</a></li>
+
+            <li><a href="#">GALLERY</a></li>
+
+            <li><a href="#">SPONSORS</a></li>
+
+            <li><a href="#">BLOG</a></li>
+
+            <li><a href="#">CA REGISTRATION</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars fa-lg" onclick="showMenu()"></i>
+      </nav>
+    </section>
+<section>
+
+  <div>
+    <img
+    src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1664372055/Gallery%20Section%20Coming%20Soon%2723/23-header-white_caj0ez.png"
+    alt="header"
+    class="header-img img-responsive d-block mx-auto"
+    />
+  </div>
+</section>
+    <section>
+
+      <div class="comingsoon-text">
+        <p class="text-center text">COMING SOON</p>
+      </div>
+    </section>
     <section id="achievements" class="container">
-
-    <header>
-      <div class="div_header_sponsor">
-        <h2 class="sponsor_header">ACHIEVEMENTS</h2>
-      </div>
-    </header>
-
-    <div>
-
-      <div class="row div_myAchivments">
-
-        <div class="col-xs-12 col-md-6 div_achivments">
-          <div class="col-6 div_achivments_img">
-            <img class="achivments_img"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Unesco_cbv9zo.jpg"
-              alt="Images_UNESCO">
-          </div>
-          <div class="col-6 achieve-text div_achivments_text">Patronage From UNESCO</div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 div_achivments">
-          <div class="col-6 div_achivments_img">
-            <img class="achivments_img" id="error_img_Lion"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_MakeIndia_p1cfrf.jpg"
-              alt="Images_MakeIndia">
-          </div>
-          <div class="col-6 div_achivments_text">Make In India & Skill India</div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 div_achivments">
-          <div class="col-6 div_achivments_img">
-            <img class="achivments_img"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_CEE_ljsttb.jpg"
-              alt="Images_CEE">
-          </div>
-          <div class="col-6 div_achivments_text">SAYEN & CEE</div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 div_achivments">
-          <div class="col-6 div_achivments_img">
-            <img class="achivments_img"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_CM_oyo74i.jpg"
-              alt="CM_Appraisal">
-          </div>
-          <div class="col-6 div_achivments_text"> Appreciation From Chief Minister</div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 div_achivments">
-          <div class="col-6 div_achivments_img">
-            <img class="achivments_img"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Limca_wmhbbs.jpg"
-              alt="Images_Limca">
-          </div>
-          <div class="col-6 div_achivments_text">Limca Book Of Record</div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 div_achivments">
-          <div class="col-6 div_achivments_img">
-            <img class="achivments_img"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Guiness_zjmwqx.jpg"
-              alt="GuinnessRecords">
-          </div>
-          <div class="col-6 div_achivments_text">Guinness Book of World Record</div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 div_achivments">
-          <div class="col-6 div_achivments_img">
-            <img class="achivments_img"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Young_vl6egn.jpg"
-              alt="Images_YoungContributer">
-          </div>
-          <div class="col-6 div_achivments_text">Young Contributors</div>
-        </div>
-
-      </div>
-
-
-
-    </div>
-
-  </section>
-
-  <!-- Testimonial Part  -->
-
-  <section id="testimonials" class="testimonials section-bg container">
-
-    <div class="container">
-
       <header>
         <div class="div_header_sponsor">
-          <h2 class="sponsor_header">TESTIMONIALS</h2>
+          <h2 class="sponsor_header">ACHIEVEMENTS</h2>
         </div>
       </header>
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper-wrapper Testimonial_swiper_Rappers">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                It's been a great experience starting from the hospitality and the way the administration arrangements
-                are being made and it was a delight to watch the crowd gathered for the event.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
+      <div>
+        <div class="row div_myAchivments">
+          <div class="col-xs-12 col-md-6 div_achivments">
+            <div class="col-6 div_achivments_img">
               <img
-                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/Ragava_Rao_yvc8he.jpg"
-                class="testimonial-img" alt="">
-              <h3>Raghava Rao</h3>
-              <h4>CFO Amazon India</h4>
+                class="achivments_img"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Unesco_cbv9zo.jpg"
+                alt="Images_UNESCO"
+              />
+            </div>
+            <div class="col-6 achieve-text div_achivments_text">
+              Patronage From UNESCO
             </div>
           </div>
 
-          <!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                The organizers for these conference, everybody, everyone had been very very friendly and helpful and I
-                found very
-                enthusiastic to work with FootPrints.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
-              <img src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/peter_kmtrg0.jpg"
-                class="testimonial-img" alt="">
-              <h3>Peter C. Schultz</h3>
-              <h4>Co-inventor of the fiber optics</h4>
-            </div>
-          </div>
-
-          <!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                It has been a wonderful experience, it has been really fun and inspiring to see all the creativity, sort
-                of chaos and
-                the spirit I see walking around it's really nice I like it.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
-              <img src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/Dr.devid_iumqek.jpg"
-                class="testimonial-img" alt="">
-              <h3>Dr. David Grinspoon</h3>
-              <h4>American astrobiologist & former inaugural Baruch S. Blumberg NASA</h4>
-            </div>
-          </div>
-
-          <!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                Students are incredible from all the innovations that I saw but most importantly these students are
-                gracious,humble and
-                more enthusiastic
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
+          <div class="col-xs-12 col-md-6 div_achivments">
+            <div class="col-6 div_achivments_img">
               <img
-                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/devid_meltzer_sejq3h.jpg"
-                class="testimonial-img" alt="">
-              <h3>David Meltzer</h3>
-              <h4>Co-founder of Sports 1 Marketing</h4>
+                class="achivments_img"
+                id="error_img_Lion"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_MakeIndia_p1cfrf.jpg"
+                alt="Images_MakeIndia"
+              />
+            </div>
+            <div class="col-6 div_achivments_text">
+              Make In India & Skill India
             </div>
           </div>
 
-          <!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                Seeing the level of energy and enthusiasm,hereby I wish all of you a great life ahead serving this
-                country with upmost
-                modern and industrial economy.Thank you for inviting me.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
+          <div class="col-xs-12 col-md-6 div_achivments">
+            <div class="col-6 div_achivments_img">
               <img
-                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283215/Testimonials/Sanjaya-Baru_vzdc0d.jpg"
-                class="testimonial-img" alt="">
-              <h3>Sanjaya Baru</h3>
-              <h4>Former Media Advisor to the Prime Minister of India</h4>
+                class="achivments_img"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_CEE_ljsttb.jpg"
+                alt="Images_CEE"
+              />
             </div>
+            <div class="col-6 div_achivments_text">SAYEN & CEE</div>
           </div>
 
-          <!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                The young generation is excited for the future of the country,I was also quite surprised by
-                the
-                questions asked by students.They are concerned about national security challenges that the country
-                faces.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
+          <div class="col-xs-12 col-md-6 div_achivments">
+            <div class="col-6 div_achivments_img">
               <img
-                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/mukesh_bhargava_tj9zsk.jpg"
-                class="testimonial-img" alt="">
-              <h3>Mukesh Bharagva</h3>
-              <h4>Member of Board, L&T Defence and Vice President</h4>
+                class="achivments_img"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_CM_oyo74i.jpg"
+                alt="CM_Appraisal"
+              />
+            </div>
+            <div class="col-6 div_achivments_text">
+              Appreciation From Chief Minister
             </div>
           </div>
 
-          <!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                I liked the event very much,I am happy that students of this university had organized such a great event
-                and the energy
-                would be seen-the audience were very interactive.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
+          <div class="col-xs-12 col-md-6 div_achivments">
+            <div class="col-6 div_achivments_img">
               <img
-                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/Saurabh-Jain_ylf0ri.jpg"
-                class="testimonial-img" alt="">
-              <h3>Saurabh Jain</h3>
-              <h4>Ex-Vice President@Paytm</h4>
+                class="achivments_img"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Limca_wmhbbs.jpg"
+                alt="Images_Limca"
+              />
             </div>
+            <div class="col-6 div_achivments_text">Limca Book Of Record</div>
           </div>
 
-          <!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="fa-solid fa-quote-left"></i>
-                I would like to tell students in this fest or university , that todays new generation can do many great
-                things , just you have to think beyond your capacity and stamina. You have great blessings in your
-                collage name itself , 'maharaja sayajirao gaekwad'.
-                <i class="fa-solid fa-quote-right"></i>
-              </p>
+          <div class="col-xs-12 col-md-6 div_achivments">
+            <div class="col-6 div_achivments_img">
               <img
-                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664288874/Testimonials/pawan_aggarwal_tprwhc.jpg"
-                class="testimonial-img" alt="">
-              <h3>Dr. Pawan Aggarwal</h3>
-              <h4>International Motivational Speaker</h4>
+                class="achivments_img"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Guiness_zjmwqx.jpg"
+                alt="GuinnessRecords"
+              />
+            </div>
+            <div class="col-6 div_achivments_text">
+              Guinness Book of World Record
             </div>
           </div>
 
-          <!-- End testimonial item -->
-
+          <div class="col-xs-12 col-md-6 div_achivments">
+            <div class="col-6 div_achivments_img">
+              <img
+                class="achivments_img"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664213376/Achivments/New_Young_vl6egn.jpg"
+                alt="Images_YoungContributer"
+              />
+            </div>
+            <div class="col-6 div_achivments_text">Young Contributors</div>
+          </div>
         </div>
+      </div>
+    </section>
 
+    <!-- Testimonial Part  -->
+
+    <section id="testimonials" class="testimonials section-bg container">
+      <div class="container">
+        <header>
+          <div class="div_header_sponsor">
+            <h2 class="sponsor_header">TESTIMONIALS</h2>
+          </div>
+        </header>
+
+        <div
+          class="testimonials-slider swiper"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="swiper-wrapper Testimonial_swiper_Rappers">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  It's been a great experience starting from the hospitality and
+                  the way the administration arrangements are being made and it
+                  was a delight to watch the crowd gathered for the event.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/Ragava_Rao_yvc8he.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Raghava Rao</h3>
+                <h4>CFO Amazon India</h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  The organizers for these conference, everybody, everyone had
+                  been very very friendly and helpful and I found very
+                  enthusiastic to work with FootPrints.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/peter_kmtrg0.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Peter C. Schultz</h3>
+                <h4>Co-inventor of the fiber optics</h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  It has been a wonderful experience, it has been really fun and
+                  inspiring to see all the creativity, sort of chaos and the
+                  spirit I see walking around it's really nice I like it.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/Dr.devid_iumqek.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Dr. David Grinspoon</h3>
+                <h4>
+                  American astrobiologist & former inaugural Baruch S. Blumberg
+                  NASA
+                </h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Students are incredible from all the innovations that I saw
+                  but most importantly these students are gracious,humble and
+                  more enthusiastic
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/devid_meltzer_sejq3h.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>David Meltzer</h3>
+                <h4>Co-founder of Sports 1 Marketing</h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  Seeing the level of energy and enthusiasm,hereby I wish all of
+                  you a great life ahead serving this country with upmost modern
+                  and industrial economy.Thank you for inviting me.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283215/Testimonials/Sanjaya-Baru_vzdc0d.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Sanjaya Baru</h3>
+                <h4>Former Media Advisor to the Prime Minister of India</h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  The young generation is excited for the future of the
+                  country,I was also quite surprised by the questions asked by
+                  students.They are concerned about national security challenges
+                  that the country faces.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/mukesh_bhargava_tj9zsk.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Mukesh Bharagva</h3>
+                <h4>Member of Board, L&T Defence and Vice President</h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  I liked the event very much,I am happy that students of this
+                  university had organized such a great event and the energy
+                  would be seen-the audience were very interactive.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664283214/Testimonials/Saurabh-Jain_ylf0ri.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Saurabh Jain</h3>
+                <h4>Ex-Vice President@Paytm</h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  I would like to tell students in this fest or university ,
+                  that todays new generation can do many great things , just you
+                  have to think beyond your capacity and stamina. You have great
+                  blessings in your collage name itself , 'maharaja sayajirao
+                  gaekwad'.
+                  <i class="fa-solid fa-quote-right"></i>
+                </p>
+                <img
+                  src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664288874/Testimonials/pawan_aggarwal_tprwhc.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Dr. Pawan Aggarwal</h3>
+                <h4>International Motivational Speaker</h4>
+              </div>
+            </div>
+
+            <!-- End testimonial item -->
+          </div>
+        </div>
       </div>
 
-    </div>
+      <div class="swiper-pagination"></div>
+    </section>
 
-    <div class="swiper-pagination"></div>
-
-  </section>
-
-  <!-- Gallery Part : Gallery,Yt,FlashBack -->
-
+    <!-- Gallery Part : Gallery,Yt,FlashBack -->
 
     <!-- Gallery Part -->
 
     <section id="Galley_gal">
-
       <div class="container">
         <header>
           <div class="div_footer_header title">
@@ -313,51 +408,71 @@
 
       <div class="gallery min-vh-100 mx-auto">
         <div class="continer-lg gallery">
-          <div class="row row-cols-1 gy-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+          <div
+            class="row row-cols-1 gy-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-3"
+          >
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960294/Gallery%20Section%20Coming%20Soon%2723/Jasleen_Royal_nlwvns.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960215/Gallery%20Section%20Coming%20Soon%2723/Pawan_Agarwal_shmmm4.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960218/Gallery%20Section%20Coming%20Soon%2723/Burnout_e6cqzt.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1664009661/Gallery%20Section%20Coming%20Soon%2723/FSR-gallery-changed_jgyhjc.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960216/Gallery%20Section%20Coming%20Soon%2723/Smack_p59im9.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663961569/Gallery%20Section%20Coming%20Soon%2723/Deco_hisrcz.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663962455/Gallery%20Section%20Coming%20Soon%2723/Quest_mzgszb.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663960058/Gallery%20Section%20Coming%20Soon%2723/Beat_Cracker_auqvjn.jpg"
-                alt="" class="gallery-Item rounded-1" />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
             <div class="col">
               <img
                 src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1664268043/Gallery%20Section%20Coming%20Soon%2723/Jampad_f4edla.jpg"
-                alt="" class="gallery-Item rounded-1 " />
+                alt=""
+                class="gallery-Item rounded-1"
+              />
             </div>
           </div>
         </div>
@@ -366,500 +481,619 @@
 
     <!-- Yt videos -->
     <section id="Gallery_Yt">
-
       <div class="container">
-
         <header>
           <div class="div_footer_header title">
             <h2 class="gallery_header">VIDEOS</h2>
           </div>
         </header>
-
       </div>
 
       <div class="container ytvideo">
-
-        <div class="continer-lg gallery ytvideo">
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 gallery">
-
+        <div class="gallery ytvideo">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 gallery"
+          >
             <div class="col d-flex justify-content-center">
-              <iframe class="gallery rounded" src="https://www.youtube.com/embed/6p5UVHeReA0"
-                title="YouTube video player" frameborder="0"
+              <iframe
+                class="gallery rounded"
+                src="https://www.youtube.com/embed/6p5UVHeReA0"
+                title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+                allowfullscreen
+              >
               </iframe>
             </div>
 
             <div class="col d-flex justify-content-center">
-              <iframe class="gallery rounded" src="https://www.youtube.com/embed/IY24LDz8aHc"
-                title="YouTube video player" frameborder="0"
+              <iframe
+                class="gallery rounded"
+                src="https://www.youtube.com/embed/IY24LDz8aHc"
+                title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+                allowfullscreen
+              >
               </iframe>
             </div>
 
             <div class="col d-flex justify-content-center">
-              <iframe class="gallery rounded" src="https://www.youtube.com/embed/KLso6njrPUU"
-                title="YouTube video player" frameborder="0"
+              <iframe
+                class="gallery rounded"
+                src="https://www.youtube.com/embed/KLso6njrPUU"
+                title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+                allowfullscreen
+              >
               </iframe>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
 
     <!-- Flashback Friday Portion -->
     <section id="Gallery_flashback">
-
       <div class="container">
-
         <header>
           <div class="div_footer_header title">
-            <h2 class="gallery_header" id="head_flashBack">FLASHBACK FRIDAY VIDEOS</h2>
+            <h2 class="gallery_header" id="head_flashBack">
+              FLASHBACK FRIDAY VIDEOS
+            </h2>
           </div>
         </header>
-
       </div>
 
       <div class="gallery-2">
-
         <div class="continer-lg gallery-2">
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg- gallery-2">
-
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg- gallery-2"
+          >
             <div class="col d-flex justify-content-center f-video">
-              <a target="_blank" href="https://www.instagram.com/reel/ChuvQ05g7gI/?utm_source=ig_web_copy_link">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/reel/ChuvQ05g7gI/?utm_source=ig_web_copy_link"
+              >
                 <img
                   src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663992230/Gallery%20Section%20Coming%20Soon%2723/Jasleen_-_web_ilghlg.jpg"
-                  class="rounded image" alt="" width="300px">
+                  class="rounded image"
+                  alt=""
+                  width="300px"
+                />
 
                 <div class="ig-overlay">
                   <img
                     src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663992975/Gallery%20Section%20Coming%20Soon%2723/Insta-icon3_pb7a4k.png"
-                    alt="">
+                    alt=""
+                  />
                 </div>
               </a>
             </div>
 
             <div class="col d-flex justify-content-center f-video">
-              <a target="_blank" href="https://www.instagram.com/reel/Cg3PD3QKGj7/?utm_source=ig_web_copy_link">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/reel/Cg3PD3QKGj7/?utm_source=ig_web_copy_link"
+              >
                 <img
                   src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663992970/Gallery%20Section%20Coming%20Soon%2723/FSR-reel-2_dmeyjw.jpg"
-                  class="rounded image" alt="" width="300px">
+                  class="rounded image"
+                  alt=""
+                  width="300px"
+                />
                 <div class="ig-overlay">
                   <img
                     src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663992975/Gallery%20Section%20Coming%20Soon%2723/Insta-icon3_pb7a4k.png"
-                    alt="">
+                    alt=""
+                  />
                 </div>
               </a>
             </div>
-
 
             <div class="col d-flex justify-content-center f-video">
-              <a target="_blank" href="https://www.instagram.com/reel/CeVyZm6KR3S/?utm_source=ig_web_copy_link">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/reel/CeVyZm6KR3S/?utm_source=ig_web_copy_link"
+              >
                 <img
                   src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663992970/Gallery%20Section%20Coming%20Soon%2723/Dome-reel-3_adidq8.jpg"
-                  class="rounded image" alt="" width="300px">
+                  class="rounded image"
+                  alt=""
+                  width="300px"
+                />
                 <div class="ig-overlay">
                   <img
                     src="https://res.cloudinary.com/dtd4dz5wi/image/upload/v1663992975/Gallery%20Section%20Coming%20Soon%2723/Insta-icon3_pb7a4k.png"
-                    alt="">
+                    alt=""
+                  />
                 </div>
               </a>
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
 
+    <!-- Section : Sponsors and Partners (Abdeali) -->
 
-  <!-- Section : Sponsors and Partners (Abdeali) -->
-
-  <section class="sponsors container" id="sponsors">
-
-    <header>
-      <div class="div_header_sponsor">
-        <h2 class="sponsor_header" id="head_sponsors">OUR PREVIOUS SPONSORS</h2>
-      </div>
-    </header>
-
-    <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events mySwiper Parent_Footer">
-
-      <div class="swiper-wrapper container Sponsors_swiper_Rappers">
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.matrixcomsec.com/">
-            <img
-              src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658896216/media/footprint_img/matrix_1_agcxqh.jpg"
-              alt="Image_1_Matrix">
-          </a>
+    <section class="sponsors container" id="sponsors">
+      <header>
+        <div class="div_header_sponsor">
+          <h2 class="sponsor_header" id="head_sponsors">
+            OUR PREVIOUS SPONSORS
+          </h2>
         </div>
+      </header>
 
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.cosmos.in/">
-            <img
-              src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658896629/media/footprint_img/cosmos_mcpo4m.jpg"
-              alt="Image_2_Cosmos">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.axtelindia.com/">
-            <img
-              src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658923436/media/footprint_img/axtel_orcfxb.jpg"
-              alt="Image_3_Axtel">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.ril.com/">
-            <img src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658925812/media/footprint_img/ril_lcvkzu.jpg"
-              alt="Image_4_Relince">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.kanan.co/">
-            <img
-              src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658923752/media/footprint_img/kanan_xfoxli.jpg"
-              alt="Image_5_kanan">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.time4education.com/">
-            <img
-              src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658895710/media/footprint_img/time_1_tndp2y.jpg"
-              alt="Image_6_TIME">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="http://www.nationalbaroda.com/">
-            <img src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035314/Sponsors%2722/NEW_SANGAA_laurfq.jpg"
-              alt="Image_6_NI">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://seelinkages.in/">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658845522/Sponsors%2722/6._SEE_Linkages_VERSE_LOGO_2_rwimhw.jpg"
-              alt="Image_7_SEE">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href=" http://www.alphatechsoftware.com/contactus.html">
-            <img src="https://res.cloudinary.com/dria45yfi/image/upload/v1646284641/FP22/sponsors/alpha_tech_zjmjwb.jpg"
-              alt="Image_8_AlphaTech">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://acumenhr.in/">
-            <img src="https://res.cloudinary.com/dria45yfi/image/upload/v1644733407/FP22/sponsors/acumen_p06vyq.jpg"
-              alt="Image_9_Acumen">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank"
-            href="https://www.zaubacorp.com/company/MBILLIONS-CORPORATES-PRIVATE-LIMITED/U74140GJ2019PTC108953">
-            <img src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035475/Sponsors%2722/New_FSE_1_wbenvm.jpg"
-              alt="Image_10_MBILLIONS_FSE">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="http://www.tulsihotel.in/">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658845522/Sponsors%2722/WhatsApp_Image_2022-01-12_at_15.19.58_j6pe53.jpg"
-              alt="Image_11_TulsiHotel">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.dsij.in/">
-            <img
-              src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658923927/media/footprint_img/dalal_street_fmc3vk.jpg"
-              alt="Image_12_DalalStreet">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.rapido.bike/">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658845524/Sponsors%2722/Rapido_Logo_Bike_Taxi_partner_fuvrpi.png"
-              alt="Image_13_RapidoBike">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.omkarpaints.com/">
-            <img src="https://res.cloudinary.com/dria45yfi/image/upload/v1644164393/FP22/sponsors/omkar_pohutc.jpg"
-              alt="Image_14_OmPrinters">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="">
-            <img
-              src="https://res.cloudinary.com/dria45yfi/image/upload/v1644164391/FP22/sponsors/jay_printers_e5gx5k.jpg"
-              alt="Image_15_JayPrinters">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://cloudester.com/">
-            <img src="https://res.cloudinary.com/dria45yfi/image/upload/v1644164359/FP22/sponsors/cloudster_fflg7w.jpg"
-              alt="Image_16_Cloudester">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://chandanorthodontics.com/">
-            <img
-              src="https://res.cloudinary.com/dria45yfi/image/upload/v1645170655/FP22/sponsors/chandan_dental_weqkve.jpg"
-              alt="Image_17_DentalPartner">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://praptigroup.com/">
-            <img src="https://res.cloudinary.com/dria45yfi/image/upload/v1645171565/FP22/sponsors/prapti_svey64.jpg"
-              alt="Image_18_PraptiGroup">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="">
-            <img
-              src="https://res.cloudinary.com/dria45yfi/image/upload/v1646284640/FP22/sponsors/malhar_florist_i8uj1k.jpg"
-              alt="Image_19_MalharFlorist">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="">
-            <img src="https://res.cloudinary.com/dria45yfi/image/upload/v1646284648/FP22/sponsors/joyalukas_wpgco5.jpg"
-              alt="Image_20_Joyalukas">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663786138/Sponsors%2722/ChangedNew/tremors_m1pjzf.jpg"
-              alt="Image_21_TremorsSponsors">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663786138/Sponsors%2722/ChangedNew/security_u4614n.jpg"
-              alt="Image_22_Security">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663786138/Sponsors%2722/ChangedNew/snack_xdo2nt.jpg"
-              alt="Image_23_SnackPartner">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://devfolio.co/">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035062/Sponsors%2722/ChangedNew/New_devFolio_bbz0st.jpg"
-              alt="Image_24_Devfolio">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.joyebike.com/wolfplus/">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035063/Sponsors%2722/ChangedNew/New_EBike_ulldtp.jpg"
-              alt="Image_25_Joy-Ebike">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a href="">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658860878/Sponsors%2722/aapdu_vadodra_dhfyjg.jpg"
-              alt="Image_26_AapduVadodra">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://www.tripwell.in/">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664208566/Sponsors%2722/ChangedNew/NewTripWell_qfp9uc.jpg"
-              alt="Image_27_Tripwell">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href="https://atulbakery.com/">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664208566/Sponsors%2722/ChangedNew/NewAtulBakery_pcu1wc.jpg"
-              alt="Image_28_AtulBakery">
-          </a>
-        </div>
-
-        <div class="swiper-slide">
-          <a target="_blank" href=" thegrapevine.co.in">
-            <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663785941/Sponsors%2722/ChangedNew/grapewine_zrlgu2.jpg"
-              alt="Image_29_Grapwine">
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- footer : Contact and NewsLetter (Abdeali)  -->
-
-  <section class="container-fluid" id="footer">
-
-    <footer class="row container-fluid Parent_Footer">
-
-      <!-- NewsLetter : column 1 -->
-      <div class="footer_Item col-sm-6 col-lg-4" id="footer_div_newsLetter">
-
-        <header class="Parent_Footer">
-          <div class="div_footer_header">
-            <h3 class="footer_header" id="head_NL">NEWS LETTER SIGN-UP</h3>
-          </div>
-        </header>
-
-        <div class="Parent_Footer">
-          <p id="newsletter_info">By subscribing to our mailing list you will always be updated with the latest news
-            from us.</p>
-        </div>
-
-        <div>
-          <form id="footer_form" class="Parent_Footer">
-            <div id="div_mail">
-              <input type="email" placeholder="Enter Email Address" name="email" id="email-textbox">
-            </div>
-            <div>
-              <button type="submit" id="send" class="footer_btn">Subscribe</button>
-            </div>
-          </form>
-        </div>
-
-      </div>
-
-      <!-- Msu Logo and Social Media Icon : column 2 -->
-      <div class="footer_Item col-sm-6 col-lg-4" id="footer_div_image">
-
-        <div class="footer_msu_logo">
-          <a href="https://www.msubaroda.ac.in/" target="_blank">
-            <img id="img_msulogo"
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035485/Sponsors%2722/ChangedNew/msu_logo_iimsu6.png"
-              alt="Faculty of Technology & Engineering">
-          </a>
-        </div>
-
-        <div class="footer_social_media">
-          <ul class="media_icons">
-            <li><a href="https://www.instagram.com/footprints.msu/" target="_blank"><i
-                  class="fa fa-instagram social"></i></a></li>
-
-            <li><a href="https://www.facebook.com/msufp/" target="_blank"><i class="fa fa-facebook social"></i></a></li>
-
-            <li><a href="https://www.youtube.com/user/FootPrintsMSU/featured" target="_blank"><i
-                  class="fa fa-youtube-play social"></i></a></li>
-
-            <li><a href="https://www.linkedin.com/company/msufp/" target="_blank"><i
-                  class="fa fa-linkedin social"></i></a></li>
-
-            <li><a href="https://twitter.com/msu_footprints" target="_blank"><i class="fa fa-twitter social"></i></a>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Contact , WebTeam : column 3 -->
-
-      <div class="footer_Item col-sm-12 col-lg-4" id="footer_div_contact">
-
-        <header>
-          <div class="div_footer_header">
-            <h3 class="footer_header" id="head_CI">CONTACT INFO</h3>
-          </div>
-        </header>
-
-        <div class="Parent_Footer_Col3">
-
-          <div class="footer_InDetail">
-            <div>
-              <i class="fa  fa-location-dot contact_icon"></i>
-            </div>
-
-            <div>
-              <a class="footer_P_hover" target="_blank" id="address"
-                href="https://www.google.com/search?tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALiCzsb44XmcOIu4BptFbb_E7xWahVsVGg:1663531057976&q=Training+and+Placement+Cell,+Faculty+of+Technology+and+Engineering,+Kalabhavan,+Vadodara.&rflfq=1&num=10&ved=2ahUKEwiR_aGOkJ_6AhXj8DgGHRJ4CfQQtgN6BAgVEAE#rlfi=hd:;si:2342506311024018623,l,CllUcmFpbmluZyBhbmQgUGxhY2VtZW50IENlbGwsIEZhY3VsdHkgb2YgVGVjaG5vbG9neSBhbmQgRW5naW5lZXJpbmcsIEthbGFiaGF2YW4sIFZhZG9kYXJhLhnjdbZd4u389Eik3P0GWn0QABABEAIQAxAEEAUQBhAHEAgYARgEGAUYBhgHGAgYCRgKIlV0cmFpbmluZyBhbmQgcGxhY2VtZW50IGNlbGwgZmFjdWx0eSBvZiB0ZWNobm9sb2d5IGFuZCBlbmdpbmVlcmluZyBrYWxhYmhhdmFuIHZhZG9kYXJhKgIIApIBCnVuaXZlcnNpdHmaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJlUzFsWlVGbkVBRaoBdQoJL20vMDE0amczEAEaHxABIhuy4RsskYRtxdrMw2hJi9sX7xfPudH9EdyGhhUqRSJBdHJhaW5pbmcgYW5kIHBsYWNlbWVudCBjZWxsIGZhY3VsdHkgb2YgdGVjaG5vbG9neSBhbmQgZW5naW5lZXJpbmcoAA;mv:[[22.3910834,73.2008159],[22.290794899999998,73.1418285]]">Training
-                and Placement Cell, Faculty of Technology and Engineering, Kalabhavan, Vadodara.</a>
-            </div>
+      <div
+        class="swiper swiper-initialized swiper-horizontal swiper-pointer-events mySwiper Parent_Footer"
+      >
+        <div class="swiper-wrapper container Sponsors_swiper_Rappers">
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.matrixcomsec.com/">
+              <img
+                src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658896216/media/footprint_img/matrix_1_agcxqh.jpg"
+                alt="Image_1_Matrix"
+              />
+            </a>
           </div>
 
-          <div class="footer_InDetail">
-            <div>
-              <i class="fa fa-envelope contact_icon"></i>
-            </div>
-
-            <div>
-              <p> <a class="footer_P_hover" href="mailto:info@msufp.in">info@msufp.in</a></p>
-              <p> <a class="footer_P_hover" href="mailto:contact@msufp.in">contact@msufp.in</a></p>
-            </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.cosmos.in/">
+              <img
+                src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658896629/media/footprint_img/cosmos_mcpo4m.jpg"
+                alt="Image_2_Cosmos"
+              />
+            </a>
           </div>
 
-          <div class="footer_InDetail Phone_div">
-            <div>
-              <i class="fa fa-phone contact_icon"></i>
-            </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.axtelindia.com/">
+              <img
+                src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658923436/media/footprint_img/axtel_orcfxb.jpg"
+                alt="Image_3_Axtel"
+              />
+            </a>
+          </div>
 
-            <div>
-              <p> <a class="footer_P_hover" href="tel:8141453979">+91-8141453979</a></p>
-              <p> <a class="footer_P_hover" href="tel:7990203367">+91-7990203367</a></p>
-            </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.ril.com/">
+              <img
+                src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658925812/media/footprint_img/ril_lcvkzu.jpg"
+                alt="Image_4_Relince"
+              />
+            </a>
+          </div>
 
-            <div id="div_teambtn">
-              <a href="./WebTeamFp23.html" target="_blank">
-                <button class="footer_btn" id="webTeamBtn">WebTeam</button>
-              </a>
-            </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.kanan.co/">
+              <img
+                src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658923752/media/footprint_img/kanan_xfoxli.jpg"
+                alt="Image_5_kanan"
+              />
+            </a>
+          </div>
 
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.time4education.com/">
+              <img
+                src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658895710/media/footprint_img/time_1_tndp2y.jpg"
+                alt="Image_6_TIME"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="http://www.nationalbaroda.com/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035314/Sponsors%2722/NEW_SANGAA_laurfq.jpg"
+                alt="Image_6_NI"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://seelinkages.in/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658845522/Sponsors%2722/6._SEE_Linkages_VERSE_LOGO_2_rwimhw.jpg"
+                alt="Image_7_SEE"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              target="_blank"
+              href=" http://www.alphatechsoftware.com/contactus.html"
+            >
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1646284641/FP22/sponsors/alpha_tech_zjmjwb.jpg"
+                alt="Image_8_AlphaTech"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://acumenhr.in/">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1644733407/FP22/sponsors/acumen_p06vyq.jpg"
+                alt="Image_9_Acumen"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              target="_blank"
+              href="https://www.zaubacorp.com/company/MBILLIONS-CORPORATES-PRIVATE-LIMITED/U74140GJ2019PTC108953"
+            >
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035475/Sponsors%2722/New_FSE_1_wbenvm.jpg"
+                alt="Image_10_MBILLIONS_FSE"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="http://www.tulsihotel.in/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658845522/Sponsors%2722/WhatsApp_Image_2022-01-12_at_15.19.58_j6pe53.jpg"
+                alt="Image_11_TulsiHotel"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.dsij.in/">
+              <img
+                src="https://res.cloudinary.com/dkr2ixh3r/image/upload/v1658923927/media/footprint_img/dalal_street_fmc3vk.jpg"
+                alt="Image_12_DalalStreet"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.rapido.bike/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658845524/Sponsors%2722/Rapido_Logo_Bike_Taxi_partner_fuvrpi.png"
+                alt="Image_13_RapidoBike"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.omkarpaints.com/">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1644164393/FP22/sponsors/omkar_pohutc.jpg"
+                alt="Image_14_OmPrinters"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1644164391/FP22/sponsors/jay_printers_e5gx5k.jpg"
+                alt="Image_15_JayPrinters"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://cloudester.com/">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1644164359/FP22/sponsors/cloudster_fflg7w.jpg"
+                alt="Image_16_Cloudester"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://chandanorthodontics.com/">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1645170655/FP22/sponsors/chandan_dental_weqkve.jpg"
+                alt="Image_17_DentalPartner"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://praptigroup.com/">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1645171565/FP22/sponsors/prapti_svey64.jpg"
+                alt="Image_18_PraptiGroup"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1646284640/FP22/sponsors/malhar_florist_i8uj1k.jpg"
+                alt="Image_19_MalharFlorist"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/dria45yfi/image/upload/v1646284648/FP22/sponsors/joyalukas_wpgco5.jpg"
+                alt="Image_20_Joyalukas"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663786138/Sponsors%2722/ChangedNew/tremors_m1pjzf.jpg"
+                alt="Image_21_TremorsSponsors"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663786138/Sponsors%2722/ChangedNew/security_u4614n.jpg"
+                alt="Image_22_Security"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663786138/Sponsors%2722/ChangedNew/snack_xdo2nt.jpg"
+                alt="Image_23_SnackPartner"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://devfolio.co/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035062/Sponsors%2722/ChangedNew/New_devFolio_bbz0st.jpg"
+                alt="Image_24_Devfolio"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.joyebike.com/wolfplus/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035063/Sponsors%2722/ChangedNew/New_EBike_ulldtp.jpg"
+                alt="Image_25_Joy-Ebike"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1658860878/Sponsors%2722/aapdu_vadodra_dhfyjg.jpg"
+                alt="Image_26_AapduVadodra"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://www.tripwell.in/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664208566/Sponsors%2722/ChangedNew/NewTripWell_qfp9uc.jpg"
+                alt="Image_27_Tripwell"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href="https://atulbakery.com/">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664208566/Sponsors%2722/ChangedNew/NewAtulBakery_pcu1wc.jpg"
+                alt="Image_28_AtulBakery"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a target="_blank" href=" thegrapevine.co.in">
+              <img
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1663785941/Sponsors%2722/ChangedNew/grapewine_zrlgu2.jpg"
+                alt="Image_29_Grapwine"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer : Contact and NewsLetter (Abdeali)  -->
+
+    <section class="container-fluid" id="footer">
+      <footer class="row container-fluid Parent_Footer">
+        <!-- NewsLetter : column 1 -->
+        <div class="footer_Item col-sm-6 col-lg-4" id="footer_div_newsLetter">
+          <header class="Parent_Footer">
+            <div class="div_footer_header">
+              <h3 class="footer_header" id="head_NL">NEWS LETTER SIGN-UP</h3>
+            </div>
+          </header>
+
+          <div class="Parent_Footer">
+            <p id="newsletter_info">
+              By subscribing to our mailing list you will always be updated with
+              the latest news from us.
+            </p>
+          </div>
+
+          <div>
+            <form id="footer_form" class="Parent_Footer">
+              <div id="div_mail">
+                <input
+                  type="email"
+                  placeholder="Enter Email Address"
+                  name="email"
+                  id="email-textbox"
+                />
+              </div>
+              <div>
+                <button type="submit" id="send" class="footer_btn">
+                  Subscribe
+                </button>
+              </div>
+            </form>
           </div>
         </div>
 
-      </div>
+        <!-- Msu Logo and Social Media Icon : column 2 -->
+        <div class="footer_Item col-sm-6 col-lg-4" id="footer_div_image">
+          <div class="footer_msu_logo">
+            <a href="https://www.msubaroda.ac.in/" target="_blank">
+              <img
+                id="img_msulogo"
+                src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664035485/Sponsors%2722/ChangedNew/msu_logo_iimsu6.png"
+                alt="Faculty of Technology & Engineering"
+              />
+            </a>
+          </div>
 
-    </footer>
+          <div class="footer_social_media">
+            <ul class="media_icons">
+              <li>
+                <a
+                  href="https://www.instagram.com/footprints.msu/"
+                  target="_blank"
+                  ><i class="fa fa-instagram social"></i
+                ></a>
+              </li>
 
-  </section>
+              <li>
+                <a href="https://www.facebook.com/msufp/" target="_blank"
+                  ><i class="fa fa-facebook social"></i
+                ></a>
+              </li>
 
-</body>
+              <li>
+                <a
+                  href="https://www.youtube.com/user/FootPrintsMSU/featured"
+                  target="_blank"
+                  ><i class="fa fa-youtube-play social"></i
+                ></a>
+              </li>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="./fluid-simulation.js"></script>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/msufp/"
+                  target="_blank"
+                  ><i class="fa fa-linkedin social"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/msu_footprints" target="_blank"
+                  ><i class="fa fa-twitter social"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact , WebTeam : column 3 -->
+
+        <div class="footer_Item col-sm-12 col-lg-4" id="footer_div_contact">
+          <header>
+            <div class="div_footer_header">
+              <h3 class="footer_header" id="head_CI">CONTACT INFO</h3>
+            </div>
+          </header>
+
+          <div class="Parent_Footer_Col3">
+            <div class="footer_InDetail">
+              <div>
+                <i class="fa fa-location-dot contact_icon"></i>
+              </div>
+
+              <div>
+                <a
+                  class="footer_P_hover"
+                  target="_blank"
+                  id="address"
+                  href="https://www.google.com/search?tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALiCzsb44XmcOIu4BptFbb_E7xWahVsVGg:1663531057976&q=Training+and+Placement+Cell,+Faculty+of+Technology+and+Engineering,+Kalabhavan,+Vadodara.&rflfq=1&num=10&ved=2ahUKEwiR_aGOkJ_6AhXj8DgGHRJ4CfQQtgN6BAgVEAE#rlfi=hd:;si:2342506311024018623,l,CllUcmFpbmluZyBhbmQgUGxhY2VtZW50IENlbGwsIEZhY3VsdHkgb2YgVGVjaG5vbG9neSBhbmQgRW5naW5lZXJpbmcsIEthbGFiaGF2YW4sIFZhZG9kYXJhLhnjdbZd4u389Eik3P0GWn0QABABEAIQAxAEEAUQBhAHEAgYARgEGAUYBhgHGAgYCRgKIlV0cmFpbmluZyBhbmQgcGxhY2VtZW50IGNlbGwgZmFjdWx0eSBvZiB0ZWNobm9sb2d5IGFuZCBlbmdpbmVlcmluZyBrYWxhYmhhdmFuIHZhZG9kYXJhKgIIApIBCnVuaXZlcnNpdHmaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTTJlUzFsWlVGbkVBRaoBdQoJL20vMDE0amczEAEaHxABIhuy4RsskYRtxdrMw2hJi9sX7xfPudH9EdyGhhUqRSJBdHJhaW5pbmcgYW5kIHBsYWNlbWVudCBjZWxsIGZhY3VsdHkgb2YgdGVjaG5vbG9neSBhbmQgZW5naW5lZXJpbmcoAA;mv:[[22.3910834,73.2008159],[22.290794899999998,73.1418285]]"
+                  >Training and Placement Cell, Faculty of Technology and
+                  Engineering, Kalabhavan, Vadodara.</a
+                >
+              </div>
+            </div>
+
+            <div class="footer_InDetail">
+              <div>
+                <i class="fa fa-envelope contact_icon"></i>
+              </div>
+
+              <div>
+                <p>
+                  <a class="footer_P_hover" href="mailto:info@msufp.in"
+                    >info@msufp.in</a
+                  >
+                </p>
+                <p>
+                  <a class="footer_P_hover" href="mailto:contact@msufp.in"
+                    >contact@msufp.in</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="footer_InDetail Phone_div">
+              <div>
+                <i class="fa fa-phone contact_icon"></i>
+              </div>
+
+              <div>
+                <p>
+                  <a class="footer_P_hover" href="tel:8141453979"
+                    >+91-8141453979</a
+                  >
+                </p>
+                <p>
+                  <a class="footer_P_hover" href="tel:7990203367"
+                    >+91-7990203367</a
+                  >
+                </p>
+              </div>
+
+              <div id="div_teambtn">
+                <a href="./WebTeamFp23.html" target="_blank">
+                  <button class="footer_btn" id="webTeamBtn">WebTeam</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./fluid-simulation.js"></script>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.left = "0";
+    }
+
+    function hideMenu() {
+      console.log("click");
+      navLinks.style.right = "-200px";
+      navLinks.style.left = null;
+    }
+  </script>
 </html>
