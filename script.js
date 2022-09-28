@@ -42,7 +42,7 @@ sendBtn.addEventListener("click", () => {
   email.value = "";
 });
 
- // --- Logic Of Sponsors Slider --- //
+// --- Logic Of Sponsors Slider --- //
 $(document).ready(function () {
   $('.Sponsors_swiper_Rappers').slick({
     slidesToShow: 5,
@@ -97,11 +97,11 @@ $(document).ready(function () {
 // ----------- Logic of Testimonials -------------- //
 
 new Swiper('.testimonials-slider', {
-  speed: 900,
-  loop: true,
+  speed: 1800,
+  loop: false,
   autoplay: {
-    delay: 1000,
-    disableOnInteraction: false
+    delay: 2000,
+    disableOnInteraction: false,
   },
   slidesPerView: 'auto',
   pagination: {
@@ -112,31 +112,24 @@ new Swiper('.testimonials-slider', {
   breakpoints: {
     250: {
       slidesPerView: 1,
-      // spaceBetween: 20
     },
     350: {
       slidesPerView: 1,
-      // spaceBetween: 20
     },
     468: {
       slidesPerView: 1,
-      // spaceBetween: 20
     },
     480: {
       slidesPerView: 1,
-      // spaceBetween: 20
     },
     556: {
       slidesPerView: 2,
-      // spaceBetween: 20
     },
     567: {
       slidesPerView: 2,
-      // spaceBetween: 20
     },
     991: {
       slidesPerView: 3,
-      // spaceBetween: 20
     },
 
     1199: {
@@ -146,9 +139,6 @@ new Swiper('.testimonials-slider', {
   }
 });
 
+// Initilize AOS
 
-// tetimonials //
-
-// $(document).ready(function(){
-//   $(".swiper-slide").equalHeights(); 
-// });
+AOS.init();
