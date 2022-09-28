@@ -93,7 +93,7 @@ section {
     width: 11%;
 }
 
-.gallery-Item {
+.gallery-Item{
     max-width: 100%;
     width: 25rem;
 }
@@ -106,6 +106,14 @@ section {
 }
 
 /* Video */
+/* .title {
+    color: #38B4AB;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 6rem;
+    text-align: center;
+} */
 
 .ytvideo {
     max-width: 100%;
@@ -139,15 +147,15 @@ iframe {
 }
 
 /* My added */
-#Galley_gal .container {
+#Galley_gal .container{
     margin-bottom: 10px;
 }
 
-#Gallery_flashback .container {
+#Gallery_flashback .container{
     margin-bottom: 10px;
 }
 
-.gallery img {
+.gallery img{
     cursor: pointer;
 }
 
@@ -166,74 +174,66 @@ iframe {
         width: 20%;
     }
 }
-
-.f-video {
+.f-video{
     overflow: hidden;
     position: relative;
     margin: 1rem;
     width: 18.75rem;
 }
-
 /* Image Hover Part */
-.ig-overlay img {
+.ig-overlay img{
     height: 100%;
     width: auto;
     display: block;
 }
-
-.gallery-2 {
+.gallery-2{
     display: flex;
     justify-content: space-evenly;
 }
-
-.f-video:hover .image {
+.f-video:hover .image{
     opacity: 0.3;
     background-color: #133d3992;
     border: 4px solid #38b4ac18;
 }
-
-.f-video .ig-overlay {
+.f-video .ig-overlay{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 5rem;
-    height: 5rem;
-    z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 5rem;
+        height: 5rem;
+        z-index: 1;
     opacity: 0;
 }
-
-.f-video:hover .ig-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 5rem;
-    height: 5rem;
-    z-index: 1;
-    opacity: 1;
+.f-video:hover .ig-overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 5rem;
+        height: 5rem;
+        z-index: 1;
+        opacity: 1; 
 }
 
 
 
 
 /* CA PAGE */
-.ca-margin {
+.ca-margin{
     margin-top: 6rem;
 }
-
-.title-2 {
+.title-2{
     color: #38B4AB;
     font-family: 'Outfit', sans-serif;
     font-size: 2.5rem;
     font-weight: 300;
     /* margin-top: 1rem; */
 }
-
 .title-2:after {
     content: '';
     background: #fff;
@@ -242,28 +242,24 @@ iframe {
     width: 20rem;
     margin-left: 0.5rem;
 }
-
 @media (max-width: 368px) {
-    .title-2:after {
+    .title-2:after{
         width: 15rem;
     }
-
+    
 }
-
-.ca-p {
+.ca-p{
     color: #fff;
     font-size: 1rem;
     letter-spacing: 1px;
 }
-
-.ca-p2 {
+.ca-p2{
     color: #38B4AB;
     font-size: large;
     letter-spacing: 2px;
 
 }
-
-.ca-p3 {
+.ca-p3{
     color: #38B4AB;
     font-weight: bold;
     text-transform: uppercase;
@@ -271,15 +267,13 @@ iframe {
     letter-spacing: 2px;
 
 }
-
-.ca-btn a {
+.ca-btn a{
     text-decoration: none;
     color: #38B4AB;
     transition: all 0.3s;
 
 }
-
-.ca-btn {
+.ca-btn{
     color: #38B4AB;
     background-color: #fff;
     /* margin-top: 5%; */
@@ -288,25 +282,18 @@ iframe {
     transition: all 0.5s;
     font-weight: bold;
 }
-
-.ca-btn:hover a {
+.ca-btn:hover a{
     color: #fff;
 }
-
-.ca-btn:hover {
+.ca-btn:hover{
     background-color: #38B4AB;
 }
-
 .ca-content {
     display: flex;
     justify-content: space-evenly;
 }
-
 @media (min-width: 992px) and (max-width: 1024px) {
-
-    .ca-p,
-    .ca-p2,
-    .ca-p3 {
+    .ca-p, .ca-p2, .ca-p3{
         font-size: 0.85rem;
     }
 
@@ -314,6 +301,11 @@ iframe {
 
 
 /* Team page */
+
+#heading_Team{
+    color: #13161C;
+}
+
 .team-page {
     background-color: #fff;
     margin: 0;
@@ -321,55 +313,41 @@ iframe {
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
-
-.team {
+.team{
     margin: 6rem 0;
     text-align: center;
 }
-
-.h1 {
+.h1{
     font-weight: 300;
     letter-spacing: 2px;
     color: #13161C;
     padding-bottom: 0.6rem;
 }
 
-h1:after {
-    content: '';
-    background: #13161C;
-    display: block;
-    height: 2px;
-    width: 8.3rem;
-    margin: 0px auto;
-}
-
-.img-box img {
+.img-box img{
     width: 100%;
 }
-
-.profile {
+.profile{
     margin-top: 2.5rem;
 }
-
-.profile .img-box {
+.profile .img-box{
     opacity: 1;
     display: block;
     position: relative;
     box-shadow: 4px 4px 3px rgb(196, 196, 196);
-    -moz-box-shadow: 4px 4px 3px rgb(180, 180, 180);
-    -webkit-box-shadow: 4px 4px 3px rgb(180, 180, 180);
-    -khtml-box-shadow: 4px 4px 3px rgb(180, 180, 180);
+            -moz-box-shadow: 4px 4px 3px rgb(180, 180, 180);
+            -webkit-box-shadow: 4px 4px 3px rgb(180, 180, 180);
+            -khtml-box-shadow: 4px 4px 3px rgb(180, 180, 180); 
 
 
 }
-
-.profile h2 {
+.profile h2{
     font-size: 1.37rem;
     font-weight: 300;
     margin-top: 1rem;
+    color: #13161C;
 }
-
-.img-box:after {
+.img-box:after{
     content: '';
     opacity: 0;
     background-color: #13161caa;
@@ -379,12 +357,11 @@ h1:after {
     top: 0;
     bottom: 0;
 }
-
-.img-box ul {
-    margin: 0;
-    padding: 20px 0;
+.img-box ul{
+    margin: 0; 
+    padding: 20px 0;  
     position: absolute;
-    z-index: 2;
+    z-index:2;
     display: block;
     left: 90%;
     top: 78%;
@@ -392,36 +369,28 @@ h1:after {
     opacity: 0;
     font-size: 1.4rem;
 }
-
-.img-box ul li {
-    width: 35px;
-    height: 35px;
+.img-box ul li{
+    width: 35px; 
+    height: 35px; 
     border: 1px solid #fff;
     border-radius: 6%;
-    padding: 0.1px;
+    padding: 0.1px; 
     display: inline-block;
-
+    
 }
-
-.img-box a {
+.img-box a{
     color: #fff;
 }
-
-.img-box:hover:after {
+.img-box:hover:after{
     opacity: 1;
 }
-
-.img-box:hover ul {
+.img-box:hover ul{
     opacity: 1;
 }
-
-.img-box a:hover {
+.img-box a:hover{
     color: rgba(255, 255, 255, 0.379);
 }
-
-.img-box:after,
-.img-box ul,
-.img-box ul li {
+.img-box:after, .img-box ul, .img-box ul li{
     -webkit-transition: all 0.5s ease-in-out 0s;
 }
 
@@ -467,7 +436,7 @@ h1:after {
     margin-left: 0%;
 }
 
-.div_myAchivments {
+.div_myAchivments{
     margin-top: 0px;
 }
 
@@ -523,11 +492,10 @@ h1:after {
     padding: 30px 30px 0 30px;
     margin: 30px 15px;
     text-align: center;
+    min-height: 350px;
     box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.8);
     background: #1b3438;
     color: white;
-
-    min-height: 350px;
 
     display: flex;
     flex-direction: column;
@@ -597,31 +565,30 @@ h1:after {
     background-color: var(--icon-color);
 }
 
-#testimonials h3 {
+#testimonials h3{
     border-bottom: 2px solid var(--icon-color);
     display: inline-block;
-    align-items: center;
-    padding-bottom: 5px;
+	align-items: center;
+	padding-bottom: 5px;
     color: white;
 }
 
-.Testimonial_swiper_Rappers {
+.Testimonial_swiper_Rappers{
 
     /* important */
-    display: flex;
-    /* important */
-    align-items: stretch;
+  display: flex;
+  /* important */
+  align-items: stretch;
 
 }
 
-.swiper-slide {
-    flex-shrink: 0;
-    width: 100%;
-    position: relative;
-    transition-property: transform;
-    height: auto;
-}
-
+.swiper-slide{
+    flex-shrink:0;
+    width:100%;
+    position:relative;
+    transition-property:transform;
+    height:auto;
+  }
 
 /* *****************  Styling in Sponsors ************ */
 
