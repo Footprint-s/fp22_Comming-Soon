@@ -193,6 +193,13 @@ nav .fa-solid {
         cursor: pointer;
     }
 
+    /* change today */
+    nav .fa-x{
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+    }
+
     .nav-links ul {
         padding: 30px;
     }
