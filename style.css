@@ -73,7 +73,7 @@ section {
     position: relative;
     margin-inline: auto;
 
-    background-color: rgba(16, 16, 195, 0.765) !important; 
+    /* background-color: rgba(16, 16, 195, 0.765) !important;  */
     /* Change Today */
 }
 
