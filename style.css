@@ -1333,6 +1333,10 @@ iframe {
 
 @media screen and (max-width:334px) {
 
+    #home{
+        height: 60vh;
+    }
+
     .about_footprints {
         flex-direction: column-reverse;
     }
@@ -1414,6 +1418,10 @@ iframe {
 
 @media screen and (min-width:334px) and (max-width:356px) {
 
+    #home{
+        height: 60vh;
+    }
+
     .about_footprints {
         flex-direction: column-reverse;
     }
@@ -1483,8 +1491,8 @@ iframe {
     }
 
     #about_footprints_page p {
-        line-height: 1.2rem;
-        text-align: center;
+        line-height: 1.3rem;
+        text-align: justify;
         letter-spacing: auto;
         /* font-size: 1.2rem;     */
     }
@@ -1493,6 +1501,10 @@ iframe {
 @media screen and (min-width:356px) and (max-width:416px) {
 
     /* Home page MQ */
+
+    #home{
+        height: 60vh;
+    }
 
     .header-img {
         width: 95%;
@@ -1511,7 +1523,7 @@ iframe {
 
     #about_footprints_page p {
         line-height: 1.2rem;
-        text-align: center;
+        text-align: justify;
         letter-spacing: auto;
         /* font-size: 1.2rem;     */
     }
@@ -1575,6 +1587,10 @@ iframe {
 
     /* Home page MQ */
 
+    #home{
+        height: 60vh;
+    }
+
     .header-img {
         width: 95%;
         margin-top: 15rem;
@@ -1588,7 +1604,7 @@ iframe {
 
     #about_footprints_page p {
         line-height: 1.2rem;
-        text-align: center;
+        text-align: justify;
         letter-spacing: 0px;
         /* font-size: 1.2rem;     */
     }
@@ -1617,6 +1633,10 @@ iframe {
     
     /* Home page MQ */
 
+    #home{
+        height: 60vh;
+    }
+
     .header-img {
         width: 95%;
         margin-top: 15rem;
@@ -1629,7 +1649,7 @@ iframe {
 
     #about_footprints_page p {
         line-height: 1.2rem;
-        text-align: center;
+        text-align: justify;
         letter-spacing: 0px;
         /* font-size: 1.2rem;     */
     }
@@ -1695,6 +1715,10 @@ iframe {
 
     /* Home page MQ */
 
+    #home{
+        height: 60vh;
+    }
+
     .header-img {
         width: 95%;
         margin-top: 15rem;
@@ -1706,8 +1730,8 @@ iframe {
     }
 
     #about_footprints_page p {
-        line-height: 1rem;
-        text-align: center;
+        line-height: 1.3rem;
+        text-align: justify;
         letter-spacing: 0px;
         /* font-size: 1.2rem;     */
     }
