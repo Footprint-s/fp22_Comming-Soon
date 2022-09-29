@@ -91,7 +91,8 @@
   </section>
 
   <!-- Home Part : Image Fp'23 -->
-  <section id="home">
+  <section id="home" class="container" style="height: 100vh;"> 
+    <!-- change today -->
 
     <section>
       <div>
@@ -132,10 +133,10 @@
           <div class="col-md-8 d-flex justify-content-center">
 
             <p>
-              FootPrints is a National Level Technical Festival, which was incepted in 2001 by Sir C N Murthy. It has
+              FootPrints is a National Level Technical Fiesta, which was incepted in 2001 by Sir C N Murthy. It has
               been rising in colossal proportions from a mere paper presentation comprising of 30 participants in
-              FootPrints'01 to FootPrints'21 that comprised of myriad competitions, workshops and seminars from the most
-              incurred celebrities.FootPrints has strived to nurture and enlighten the engineering minds of the country
+              FootPrints'01 to FootPrints'22 that comprised of myriad competitions, workshops and seminars from the most
+              incurred celebrities. FootPrints has strived to nurture and enlighten the engineering minds of the country
               and have thereby earned the repute of an avant-garde technical fiesta. It comprises of exceptional tech
               and non tech events, tantalizing seminars, startling techzibitions and engaging workshops by virtuosos.It
               also works towards upliftment of society under FootPrints Social Responsibilty. At FootPrints we attach a
@@ -149,7 +150,7 @@
           <div class="col-md-4 d-flex justify-content-center">
             <!-- <img src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664374287/About/About_Fp_odt0vm.gif" alt="# Think Beyond"> -->
             <img
-              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664373399/About/About-ThinkBeyond-unscreen_znig2x.gif"
+              src="https://res.cloudinary.com/dnsvjhy0a/image/upload/v1664426623/About/About_Image_rbpr15.gif"
               alt="# Think Beyond">
           </div>
 
@@ -1074,14 +1075,25 @@
   var navLinks = document.getElementById("navLinks");
 
   function showMenu() {
-    navLinks.style.left = "0";
+    navLinks.style.right = "0";
   }
 
   function hideMenu() {
     console.log("click");
-    navLinks.style.right = "-200px";
-    navLinks.style.left = null;
+    navLinks.style.left = "-200px";
+    navLinks.style.right = null;
   }
+
+  /* Original*/
+  // function showMenu() {
+  //   navLinks.style.left = "0";
+  // }
+
+  // function hideMenu() {
+  //   console.log("click");
+  //   navLinks.style.right = "-200px";
+  //   navLinks.style.left = null;
+  // }
 </script>
 
 </html>

@@ -49,6 +49,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
+    /* background-color: rgba(16, 16, 195, 0.765) !important;  */
+    /* Change Today */
 }
 
 
@@ -69,6 +72,9 @@ section {
     width: fit-content;
     position: relative;
     margin-inline: auto;
+
+    background-color: rgba(16, 16, 195, 0.765) !important; 
+    /* Change Today */
 }
 
 
@@ -194,10 +200,10 @@ nav .fa-solid {
 
 /* Coming soon text */
 
-.text{
+.text {
     font-size: 3rem;
     font-family: 'Russo One', sans-serif;
-    color: rgba(0,0,0,0);
+    color: rgba(0, 0, 0, 0);
     font-weight: 200;
     margin-top: 3rem;
     margin-bottom: 15rem;
@@ -213,6 +219,8 @@ nav .fa-solid {
     animation: backcolor 5s linear infinite;
     letter-spacing: 3px;
     word-spacing: 3px;
+
+    word-break: break-all;
 }
 
 @keyframes backcolor {
@@ -472,6 +480,7 @@ iframe {
 /* CA PAGE */
 .ca-margin {
     margin-top: 6rem;
+    margin-bottom: 2rem;
 }
 
 .title-2 {
@@ -560,17 +569,17 @@ iframe {
 
 }
 
-#Btn-Team-GoBack a{
+#Btn-Team-GoBack a {
     color: #13161C;
 }
 
-#Btn-Team-GoBack:hover{
-background-color: #0e1115;
+#Btn-Team-GoBack:hover {
+    background-color: #0e1115;
 }
 
-#Btn-Team-GoBack:hover a{
-/* background-color: #0e1115; */
-color: white;
+#Btn-Team-GoBack:hover a {
+    /* background-color: #0e1115; */
+    color: white;
 }
 
 /* Team page */
@@ -1466,9 +1475,23 @@ color: white;
         --bs-gutter-y: 1.3rem;
     }
 
+    #about_footprints_page p {
+        line-height: 1.2rem;
+        text-align: center;
+        letter-spacing: auto;
+        /* font-size: 1.2rem;     */
+    }
 }
 
 @media screen and (min-width:356px) and (max-width:416px) {
+
+    /* Home page MQ */
+
+    .header-img {
+        width: 95%;
+        margin-top: 15rem;
+        margin-bottom: 7rem;
+    }
 
     .about_footprints {
         flex-direction: column-reverse;
@@ -1480,8 +1503,8 @@ color: white;
     }
 
     #about_footprints_page p {
-        line-height: auto;
-        text-align: start;
+        line-height: 1.2rem;
+        text-align: center;
         letter-spacing: auto;
         /* font-size: 1.2rem;     */
     }
@@ -1543,13 +1566,22 @@ color: white;
 
 @media screen and (min-width:416px) and (max-width:479px) {
 
+    /* Home page MQ */
+
+    .header-img {
+        width: 95%;
+        margin-top: 15rem;
+        margin-bottom: 6.5rem;
+    }
+
     .about_footprints {
         flex-direction: column-reverse;
     }
 
+
     #about_footprints_page p {
-        line-height: 1rem;
-        text-align: start;
+        line-height: 1.2rem;
+        text-align: center;
         letter-spacing: 0px;
         /* font-size: 1.2rem;     */
     }
@@ -1575,13 +1607,22 @@ color: white;
 
 @media screen and (min-width:416px) and (max-width:575px) {
 
+    
+    /* Home page MQ */
+
+    .header-img {
+        width: 95%;
+        margin-top: 15rem;
+        margin-bottom: 6rem;
+    }
+
     .about_footprints {
         flex-direction: column-reverse;
     }
 
     #about_footprints_page p {
-        line-height: 1rem;
-        text-align: start;
+        line-height: 1.2rem;
+        text-align: center;
         letter-spacing: 0px;
         /* font-size: 1.2rem;     */
     }
@@ -1644,6 +1685,14 @@ color: white;
 }
 
 @media screen and (min-width:575px) and (max-width:667px) {
+
+    /* Home page MQ */
+
+    .header-img {
+        width: 95%;
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+    }
 
     .about_footprints {
         flex-direction: column-reverse;
