@@ -223,7 +223,7 @@ nav .fa-solid {
     background-clip: text;
     color: transparent;
     font-size: 5rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Russo One', sans-serif;
     animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
 }
 
@@ -266,7 +266,7 @@ nav .fa-solid {
         background-clip: text;
         color: transparent;
         font-size: 2rem;
-        font-family: 'Outfit', sans-serif;
+        font-family: 'Russo One', sans-serif;
         animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
     }
 
