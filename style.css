@@ -1413,6 +1413,10 @@ iframe {
         --bs-gutter-y: 1.3rem;
     }
 
+    #head_sponsors {
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
 }
 
 
@@ -1468,9 +1472,9 @@ iframe {
         transform: scale(0.9);
     }
 
-
     #head_sponsors {
-        font-size: 2rem;
+        font-size: 1.1rem;
+        margin-bottom: 0px;
     }
 
     .sponsor_header {
@@ -1565,7 +1569,7 @@ iframe {
     }
 
     #head_sponsors {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-bottom: 0px;
     }
 
