@@ -361,7 +361,18 @@ nav .fa-solid {
 #about_footprints_page img {
     width: 100%;
     height: 100%;
-    margin-top: 3%;
+    /* margin-top: 3%; */
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+
+    width: 155%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+    margin-top: -5%;
 }
 
 #id_head_aboutFp {
@@ -1490,6 +1501,22 @@ iframe {
         flex-direction: column-reverse;
     }
 
+      /* change in About */
+
+      #about_footprints_page img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    #about_footprints_page p {
+        line-height: 1.5rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
     .Parent_Footer {
         font-size: 11px;
 
@@ -1592,6 +1619,22 @@ iframe {
         /* font-size: 1.2rem;     */
     }
 
+      /* change in About */
+
+      #about_footprints_page img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    #about_footprints_page p {
+        line-height: 1.5rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
     .Parent_Footer_Col3 {
         font-size: 12px;
     }
@@ -1673,6 +1716,22 @@ iframe {
         /* font-size: 1.2rem;     */
     }
 
+      /* change in About */
+
+      #about_footprints_page img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    #about_footprints_page p {
+        line-height: 1.5rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
     #sponsors .slick-current img {
         transform: scale(0.9);
     }
@@ -1717,7 +1776,21 @@ iframe {
         letter-spacing: 0px;
         /* font-size: 1.2rem;     */
     }
+  /* change in About */
 
+  #about_footprints_page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+#about_footprints_page p {
+    line-height: 1.5rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
     .Parent_Footer {
         font-size: 12px;
     }
@@ -1800,6 +1873,22 @@ iframe {
         /* font-size: 1.2rem;     */
     }
 
+      /* change in About */
+
+      #about_footprints_page img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    #about_footprints_page p {
+        line-height: 1.5rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
     .Parent_Footer {
         font-size: 9px;
     }
@@ -1836,6 +1925,22 @@ iframe {
 
     @media screen and (min-width:576px) and (max-width:642px) {
 
+          /* change in About */
+
+          #about_footprints_page img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: auto;
+        }
+    
+        #about_footprints_page p {
+            line-height: 1.5rem;
+            text-align: justify;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+
         .about_footprints {
             flex-direction: column-reverse;
         }
@@ -1863,6 +1968,22 @@ iframe {
     .about_footprints {
         flex-direction: column-reverse;
     }
+
+        /* change in About */
+
+        #about_footprints_page img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: auto;
+        }
+    
+        #about_footprints_page p {
+            line-height: 1.5rem;
+            text-align: justify;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
 
     .Parent_Footer {
         font-size: 10px;
@@ -1970,9 +2091,25 @@ iframe {
         font-size: 15px;
     }
 
-    .about_footprints p {
-        font-size: 1rem;
+    /* change in About */
+
+    #about_footprints_page img {
+        width: 200%;
+        height: 100%;
+        object-fit: contain;
+        margin: auto;
     }
+
+    #about_footprints_page p {
+        line-height: 1.5rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+
+    /* .about_footprints p {
+        font-size: 1rem;
+    } */
 
     .Parent_Footer_Col3 {
         font-size: 15px;
@@ -2094,6 +2231,12 @@ iframe {
 
 @media screen and (min-width:1194px) and (max-width:1263px) {
 
+    /* change in about  */
+
+    #about_footprints_page p {
+        line-height: 1.5rem;
+    }
+    
     .about_footprints p {
         font-size: 1.5rem;
     }
