@@ -936,6 +936,7 @@ iframe {
 .testimonials .swiper-pagination {
     margin-top: 20px;
     position: relative;
+    z-index: 1;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {

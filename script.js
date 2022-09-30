@@ -101,7 +101,7 @@ new Swiper('.testimonials-slider', {
   loop: false,
   autoplay: {
     delay: 2000,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   slidesPerView: 'auto',
   pagination: {
@@ -137,6 +137,12 @@ new Swiper('.testimonials-slider', {
       spaceBetween: 20
     }
   }
+});
+
+$(".testimonials-slider").hover(function() {
+  (this).swiper.autoplay.stop();
+}, function() {
+  (this).swiper.autoplay.start();
 });
 
 // Initilize AOS
