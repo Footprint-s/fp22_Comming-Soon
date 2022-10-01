@@ -663,11 +663,14 @@ iframe {
 /* Team page */
 
 #heading_Team {
-    color: #13161C;
+    /* color: #13161C; */
+    color: white;
+    
 }
 
 .team-page {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -677,23 +680,20 @@ iframe {
 .team {
     margin: 6rem 0;
     text-align: center;
+
+    width: fit-content;
+    position: relative;
+    margin-inline: auto;
 }
 
 .h1 {
     font-weight: 300;
     letter-spacing: 2px;
-    color: #13161C;
+    /* color: #13161C; */
+    color: white;
     padding-bottom: 0.6rem;
 }
 
-/* h1:after{
-    content: '';
-    background: #13161C;
-    display: block;
-    height: 2px;
-    width: 8.3rem;
-    margin: 0px auto;
-} */
 .img-box img {
     width: 100%;
 }
@@ -717,7 +717,8 @@ iframe {
     font-size: 1.37rem;
     font-weight: 300;
     margin-top: 1rem;
-    color: #13161C;
+    color: white;
+
 }
 
 .img-box:after {
@@ -1586,7 +1587,6 @@ iframe {
         line-height: 1.3rem;
         text-align: justify;
         letter-spacing: auto;
-        /* font-size: 1.2rem;     */
     }
 }
 
@@ -1617,7 +1617,6 @@ iframe {
         line-height: 1.2rem;
         text-align: justify;
         letter-spacing: auto;
-        /* font-size: 1.2rem;     */
     }
 
       /* change in About */
@@ -1714,7 +1713,6 @@ iframe {
         line-height: 1.2rem;
         text-align: justify;
         letter-spacing: 0px;
-        /* font-size: 1.2rem;     */
     }
 
       /* change in About */
